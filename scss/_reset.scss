@@ -1,0 +1,150 @@
+﻿@charset "utf-8";
+
+/*
+  H5 Reset
+-------------------------------------------------------------------------------*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block;
+}
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+
+ul, ol {
+  list-style: none;
+}
+
+
+blockquote, q { quotes: none; }
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {content: ''; content: none;}
+
+
+:focus {
+  outline: none;
+}
+
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+
+del {text-decoration: line-through;}
+
+small {font-size: 85%;}
+
+strong {font-weight: bold;}
+
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+
+
+
+
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+
+
+input, select {
+  vertical-align: middle;
+}
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+
+button, input, select, textarea {margin: 0;}
+
+
+
+.clearfix:before, 
+.clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+
+
+
+/* fix mobile web */
+a, img {
+    -webkit-touch-callout: none; 
+}
+
+a, button {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+input[type=text],
+input[type=number],
+input[type=password] {
+  -webkit-appearance: none;
+          appearance: none; 
+}
+
+html, body {
+  width: 100%; 
+  height: 100%;
+
+  -webkit-user-select: none; 
+        user-select: none;
+
+  -webkit-text-size-adjust: 100%; 
+  
+  -webkit-overflow-scrolling: touch;
+          overflow-scrolling: touch;
+
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}

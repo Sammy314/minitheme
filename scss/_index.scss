@@ -1,0 +1,119 @@
+html, body{
+  height: 100%;
+  width: 100%;
+}
+.page-container {
+  background-image: url(../img/79-89_02.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/79-80.jpg.png',sizingMethod='scale');
+}
+.music {
+  position: absolute;
+  right: px2rem(20);
+  top: px2rem(26);
+  width: px2rem(60);
+  height: px2rem(62);
+  background: url(../img/music-off.png) no-repeat center;
+  background-size: 100%;
+}
+@keyframes music {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.head {
+  position: relative;
+  height: px2rem(220);
+  /* background: url(img/head.png) no-repeat center; */
+  background: url(../img/time.png) no-repeat 63% 50%;
+  background-size: 85%;
+  margin-top: 70px;
+}
+.img {
+  position: absolute;
+  top: px2rem(50);
+  width: px2rem(90);
+  height: px2rem(72);
+}
+.img-1 {
+  left: px2rem(134); 
+}
+.img-2 {
+  left: px2rem(260); 
+}
+.img-3 {
+  left: px2rem(382); 
+}
+.img-4 {
+  left: px2rem(510); 
+}
+.body {
+  text-align: center;
+  /* animation-duration: 4s;  */
+}
+.title {
+  animation: body 4s infinite; 
+  font-size: px2rem(46);
+  font-family: "方正正大黑简体";
+  font-weight: 900;
+  padding: 0 px2rem(40);
+}
+.class {
+  display: none;
+}
+.show { 
+  display: block;
+  text-align: center;
+}
+@keyframes body {
+  10% {
+    transform: rotate(360deg);
+  }
+  30% {
+    transform: scale(1);
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+.con {
+  font-size: px2rem(28);
+  margin-top: px2rem(70);
+  margin-bottom: px2rem(60);
+  line-height: px2rem(40);
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  font-family: "方正正大黑简体";
+  padding: 0 px2rem(40);
+}
+.pic {
+  height: px2rem(340);
+  margin: 0 px2rem(60);
+  margin-top: px2rem(100);
+  border: 3px solid #f8b959;
+  // background-image: url(../img/22.jpg);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: 100%;
+  img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  &.noborder {
+    border: 0;
+    height: px2rem(400);
+  }
+}
