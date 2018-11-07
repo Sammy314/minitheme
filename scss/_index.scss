@@ -3,11 +3,8 @@ html, body{
   width: 100%;
 }
 .page-container {
-  background-image: url(../img/79-89_02.png);
-  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  background-size: 100% 100%;
   position: relative;
   overflow: hidden;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/79-80.jpg.png',sizingMethod='scale');
@@ -165,5 +162,59 @@ html, body{
   &.noborder {
     border: 0;
     height: px2rem(400);
+  }
+}
+.page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-image: url(../img/79-89_02.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: page 40s;
+  // animation-delay: 10s;
+}
+@keyframes page {
+  100% {
+    opacity: 1;
+  }
+}
+.startmove {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-image: url(../img/start.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: move 1s ;
+  animation-delay: 10s;
+  animation-iteration-count: 1;
+  .head {
+    width: px2rem(380);
+    height: px2rem(390);
+    background: url(../img/clock.gif) center;
+    background-size: 100%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .year-num {
+    font-size: px2rem(168);
+    color: #aa9675;
+    font-style: italic;
+    letter-spacing: 5px;
+    margin-top: px2rem(200);
+    font-weight: 800;
+  }
+  .tip {
+    font-size: px2rem(30);
+    color: #aa8675;
+    letter-spacing: 3px;
+  }
+}
+@keyframes move {
+  100% {
+    opacity: 0;
   }
 }
