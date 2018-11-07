@@ -1,4 +1,7 @@
-var musicAudio=document.getElementById("musicAudio");
+window.onload = function() {
+
+
+  var musicAudio=document.getElementById("musicAudio");
   var music=document.getElementsByClassName("music")[0];
   // document.addEventListener('DOMContentLoaded', function() {
   //   function audioAutoPlay() {
@@ -84,3 +87,4 @@ var musicAudio=document.getElementById("musicAudio");
     top = parseInt(top)- 5;
     stage3.style.top = top + 'px';
   }, 200);
+}
