@@ -47,13 +47,13 @@ var musicAudio=document.getElementById("musicAudio");
       $('.stage-2-img').css('animation','translate-y .5s linear .5s 1 normal forwards');
     }
     if (count === 8) {
-      $('.page-container').css('background-image','url(img/80-90_02.png)');
+      $('.page').css('background-image','url(img/80-90_02.png)');
     }
     if (count === 18) {
-      $('.page-container').css('background-image','url(img/00-10_02.png)');
+      $('.page').css('background-image','url(img/00-10_02.png)');
     }
     if (count === 32) {
-      $('.page-container').css('background-image','url(img/10-18_02.png)');
+      $('.page').css('background-image','url(img/10-18_02.png)');
     }
     // if (count === 4) {
     //   clearInterval(timer);

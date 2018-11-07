@@ -104,6 +104,7 @@ html, body{
 }
 .body {
   text-align: center;
+  height: 100%;
   /* animation-duration: 4s;  */
 }
 .title {
@@ -119,6 +120,12 @@ html, body{
 .show { 
   display: block;
   text-align: center;
+  &.nopic {
+    border: 4px solid #f8b959;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 100px;
+  }
 }
 @keyframes body {
   10% {
@@ -165,6 +172,11 @@ html, body{
   }
 }
 .page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -172,15 +184,14 @@ html, body{
   background-image: url(../img/79-89_02.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  animation: page 40s;
-  // animation-delay: 10s;
+  opacity: 0;
 }
-@keyframes page {
-  100% {
-    opacity: 1;
-  }
-}
-.startmove {
+.gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -188,33 +199,18 @@ html, body{
   background-image: url(../img/start.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  animation: move 1s ;
-  animation-delay: 10s;
-  animation-iteration-count: 1;
-  .head {
+  .clock {
     width: px2rem(380);
-    height: px2rem(390);
-    background: url(../img/clock.gif) center;
+    height: 70%;
+    background: url(../img/clock.gif) no-repeat center;
     background-size: 100%;
     margin: auto;
     margin-top: 30px;
-  }
-  .year-num {
-    font-size: px2rem(168);
-    color: #aa9675;
-    font-style: italic;
-    letter-spacing: 5px;
-    margin-top: px2rem(200);
-    font-weight: 800;
   }
   .tip {
     font-size: px2rem(30);
     color: #aa8675;
     letter-spacing: 3px;
-  }
-}
-@keyframes move {
-  100% {
-    opacity: 0;
+    margin-top: px2rem(-120);
   }
 }
