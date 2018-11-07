@@ -35,7 +35,7 @@ html, body{
   /* background: url(img/head.png) no-repeat center; */
   background: url(../img/time.png) no-repeat 63% 50%;
   background-size: 85%;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 .stage-1 {
   display: flex;
@@ -140,8 +140,8 @@ html, body{
 }
 .con {
   font-size: px2rem(28);
-  margin-top: px2rem(70);
-  margin-bottom: px2rem(60);
+  margin-top: px2rem(40);
+  // margin-bottom: px2rem(60);
   line-height: px2rem(40);
   letter-spacing: 0.5px;
   font-weight: 900;
@@ -151,7 +151,7 @@ html, body{
 .pic {
   height: px2rem(340);
   margin: 0 px2rem(60);
-  margin-top: px2rem(100);
+  margin-top: px2rem(60);
   border: 3px solid #f8b959;
   // background-image: url(../img/22.jpg);
   // background-repeat: no-repeat;

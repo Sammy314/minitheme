@@ -165,7 +165,7 @@ html, body {
   /* background: url(img/head.png) no-repeat center; */
   background: url(../img/time.png) no-repeat 63% 50%;
   background-size: 85%;
-  margin-top: 70px; }
+  margin-top: 30px; }
 
 .stage-1 {
   display: flex;
@@ -207,7 +207,8 @@ html, body {
   left: 196px;
   overflow: hidden; }
   .stage-3 .stage-3-img {
-    position: absolute; }
+    position: absolute;
+    top: 0; }
     .stage-3 .stage-3-img img {
       width: 46px;
       height: 42px; }
@@ -254,8 +255,7 @@ html, body {
     opacity: 0; } }
 .con {
   font-size: 0.5973333333rem;
-  margin-top: 1.4933333333rem;
-  margin-bottom: 1.28rem;
+  margin-top: 0.8533333333rem;
   line-height: 0.8533333333rem;
   letter-spacing: 0.5px;
   font-weight: 900;
@@ -265,7 +265,7 @@ html, body {
 .pic {
   height: 7.2533333333rem;
   margin: 0 1.28rem;
-  margin-top: 2.1333333333rem;
+  margin-top: 1.28rem;
   border: 3px solid #f8b959; }
   .pic img {
     display: inline-block;
