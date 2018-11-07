@@ -207,8 +207,7 @@ html, body {
   left: 196px;
   overflow: hidden; }
   .stage-3 .stage-3-img {
-    position: absolute;
-    top: 0; }
+    position: absolute; }
     .stage-3 .stage-3-img img {
       width: 46px;
       height: 42px; }

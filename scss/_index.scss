@@ -37,11 +37,61 @@ html, body{
   background-size: 85%;
   margin-top: 70px;
 }
-.img {
+.stage-1 {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  top: px2rem(50);
-  width: px2rem(90);
-  height: px2rem(72);
+  top: 23px;
+  width: 46px;
+  height: 46px;
+  left: 72px;
+  overflow: hidden;
+  .stage-1-img {
+    position: absolute;
+    // top: -51px;
+    img {
+      width: 46px;
+      height: 42px;
+    }
+  }
+}
+.stage-2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 23px;
+  width: 46px;
+  height: 46px;
+  left: 135px;
+  overflow: hidden;
+  .stage-2-img {
+    position: absolute;
+    img {
+      width: 46px;
+      height: 42px;
+    }
+  }
+}
+.stage-3 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 23px;
+  width: 46px;
+  height: 46px;
+  left: 196px;
+  overflow: hidden;
+  .stage-3-img {
+    position: absolute;
+    top: 0;
+    // top: -51px;
+    img {
+      width: 46px;
+      height: 42px;
+    }
+  }
+}
+.img {
 }
 .img-1 {
   left: px2rem(134); 
