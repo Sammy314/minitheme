@@ -1,5 +1,7 @@
 window.onload = function() {
-
+  
+setTimeout(function() {$(".gif").animate({"opacity": "0"},1000)}, 8000);
+setTimeout(function() {$(".page").animate({"opacity": "1"},1000)}, 8000);
 
   var musicAudio=document.getElementById("musicAudio");
   var music=document.getElementsByClassName("music")[0];
