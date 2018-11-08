@@ -21,32 +21,32 @@ window.onload = function() {
         break;
       case 2:
       // 80
-        move(stage3, 51);
-        move(stage4, 51);
+        move(stage3, 58);
+        move(stage4, 58);
         break;
       case 3:
       // 81
-        move(stage4, 103);
+        move(stage4, 117);
         break;
       case 4:
       // 84
-        move(stage4, 154);
+        move(stage4, 176);
         break;
       case 5:
       // 85
-        move(stage4, 206);
+        move(stage4, 234);
         break;
       case 6:
       // 1988
-        move(stage4, 258);
+        move(stage4, 291);
         break;
       case 7:
       // 1989
-        move(stage4, 308);
+        move(stage4, 350);
         break;
       case 8:
       // 90
-        move(stage3, 103);
+        move(stage3, 117);
         move(stage4, 360);
         $('.page').css('background-image','url(img/80-90_02.png)');
         break;
