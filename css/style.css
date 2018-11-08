@@ -166,7 +166,10 @@ html, body {
 .head-img {
   position: relative;
   width: 375px;
-  height: 132px; }
+  height: 132px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .head-img img {
     width: 375px;
     height: 132px; }

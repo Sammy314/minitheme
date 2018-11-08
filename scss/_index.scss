@@ -38,6 +38,9 @@ html, body{
   position: relative;
   width: 375px;
   height: 132px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
     width: 375px;
     height: 132px;
