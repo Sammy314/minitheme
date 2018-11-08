@@ -291,7 +291,8 @@ html, body {
   .gif .tip {
     font-size: 0.64rem;
     color: #aa8675;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    margin-top: 0.8533333333rem; }
 
 .stage-1-icon {
   width: 1.92rem;
