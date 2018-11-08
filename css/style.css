@@ -160,50 +160,47 @@ html, body {
 .head {
   position: relative;
   height: 110px;
-  /* background: url(img/head.png) no-repeat center; */
   background-size: 85%;
   margin-top: 30px; }
 
 .head-img {
-  position: relative;
-  width: 255px;
-  height: 72px; }
+  position: relative; }
 
 .stage-1 {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 23px;
+  top: 29px;
   width: 46px;
   height: 46px;
-  left: 72px;
+  left: 48px;
   overflow: hidden; }
   .stage-1 .stage-1-img {
     position: absolute; }
     .stage-1 .stage-1-img img {
-      width: 46px;
-      height: 42px; }
+      width: 45px;
+      height: 45px; }
 
 .stage-2 {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 23px;
+  top: 29px;
   width: 46px;
   height: 46px;
-  left: 135px;
+  left: 122px;
   overflow: hidden; }
   .stage-2 .stage-2-img {
     position: absolute; }
     .stage-2 .stage-2-img img {
-      width: 46px;
-      height: 42px; }
+      width: 45px;
+      height: 45px; }
 
 .stage-3 {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 23px;
+  top: 29px;
   width: 46px;
   height: 46px;
   left: 196px;
@@ -212,35 +209,23 @@ html, body {
     position: absolute;
     top: 0; }
     .stage-3 .stage-3-img img {
-      width: 46px;
-      height: 42px; }
+      width: 45px;
+      height: 45px; }
 
 .stage-4 {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 23px;
+  top: 29px;
   width: 46px;
   height: 46px;
-  left: 260px;
+  left: 268px;
   overflow: hidden; }
   .stage-4 .stage-4-img {
     position: absolute; }
     .stage-4 .stage-4-img img {
-      width: 46px;
-      height: 42px; }
-
-.img-1 {
-  left: 2.8586666667rem; }
-
-.img-2 {
-  left: 5.5466666667rem; }
-
-.img-3 {
-  left: 8.1493333333rem; }
-
-.img-4 {
-  left: 10.88rem; }
+      width: 45px;
+      height: 45px; }
 
 .body {
   text-align: center;
@@ -264,7 +249,8 @@ html, body {
     border: 4px solid #f8b959;
     padding: 10px;
     margin: 10px;
-    margin-top: 100px; }
+    margin-top: 100px;
+    background: #d51e1d; }
 
 @keyframes body {
   10% {
@@ -328,7 +314,7 @@ html, body {
     font-size: 0.64rem;
     color: #aa8675;
     letter-spacing: 3px;
-    margin-top: -2.1333333333rem; }
+    margin-top: -1.92rem; }
 
 .stage-1-icon {
   width: 1.92rem;

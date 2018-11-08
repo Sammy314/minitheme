@@ -30,33 +30,28 @@ html, body{
 }
 .head {
   position: relative;
-  // height: px2rem(220);
   height: 110px;
-  /* background: url(img/head.png) no-repeat center; */
-  // background: url(../img/time.png) no-repeat 63% 50%;
   background-size: 85%;
   margin-top: 30px;
 }
 .head-img {
   position: relative;
-  width: 255px;
-  height: 72px;
 }
 .stage-1 {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 23px;
+  top: 29px;
   width: 46px;
   height: 46px;
-  left: 72px;
+  left: 48px;
   overflow: hidden;
   .stage-1-img {
     position: absolute;
     // top: -51px;
     img {
-      width: 46px;
-      height: 42px;
+      width: 45px;
+      height: 45px;
     }
   }
 }
@@ -64,16 +59,16 @@ html, body{
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 23px;
+  top: 29px;
   width: 46px;
   height: 46px;
-  left: 135px;
+  left: 122px;
   overflow: hidden;
   .stage-2-img {
     position: absolute;
     img {
-      width: 46px;
-      height: 42px;
+      width: 45px;
+      height: 45px;
     }
   }
 }
@@ -81,7 +76,7 @@ html, body{
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 23px;
+  top: 29px;
   width: 46px;
   height: 46px;
   left: 196px;
@@ -91,8 +86,8 @@ html, body{
     top: 0;
     // top: -51px;
     img {
-      width: 46px;
-      height: 42px;
+      width: 45px;
+      height: 45px;
     }
   }
 }
@@ -100,32 +95,18 @@ html, body{
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 23px;
+  top: 29px;
   width: 46px;
   height: 46px;
-  left: 260px;
+  left: 268px;
   overflow: hidden;
   .stage-4-img {
     position: absolute;
     img {
-      width: 46px;
-      height: 42px;
+      width: 45px;
+      height: 45px;
     }
   }
-}
-.img {
-}
-.img-1 {
-  left: px2rem(134); 
-}
-.img-2 {
-  left: px2rem(260); 
-}
-.img-3 {
-  left: px2rem(382); 
-}
-.img-4 {
-  left: px2rem(510); 
 }
 .body {
   text-align: center;
@@ -150,6 +131,7 @@ html, body{
     padding: 10px;
     margin: 10px;
     margin-top: 100px;
+    background: #d51e1d;
   }
 }
 @keyframes body {
@@ -227,6 +209,6 @@ html, body{
     font-size: px2rem(30);
     color: #aa8675;
     letter-spacing: 3px;
-    margin-top: px2rem(-100);
+    margin-top: px2rem(-90);
   }
 }

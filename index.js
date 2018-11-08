@@ -1,6 +1,13 @@
 window.onload = function() {
   
-  var year = [ '1978', '1980', '1981', '1984', '1985', '1988', '1989', '1990', '1991', '1991', '1992', '1992', '1992', '1994', '1997', '1999', '2000', '2004', '2005', '2005', '2006', '2006', '2006', '2006', '2007', '2008', '2008', '2008', '2010', '2011', '2012', '2012', '2013', '2013', '2014', '2014', '2015', '2015', '2016', '2016', '2017'];
+  var year = [ '1978', '1980', '1981', '1984', '1985', '1988', '1989', '1990','1990', '1991', '1991', '1992', '1992', '1992', '1994', '1997', '1999', '2000', '2004', '2005', '2005', '2006', '2006', '2006', '2006', '2007', '2008', '2008', '2008', '2010', '2011', '2012', '2012', '2013', '2014', '2014', '2015', '2015', '2016', '2016', '2017'];
+  setTimeout(function() {
+    $(".gif").animate({"opacity": "0"},1000);
+    $(".page").animate({"opacity": "1"},1000);
+  }, 8000);
+  setTimeout(function() {
+    var timer = setInterval(circle, 4000);
+  }, 8000);
   var count = 1;
   function circle(){
     var page = document.getElementsByClassName('class')[count];
@@ -10,107 +17,128 @@ window.onload = function() {
     
     switch (count) {
       case 1:
+      // 78
         break;
       case 2:
-        move(stage3, 50);
-        move(stage4, 50);
+      // 80
+        move(stage3, 51);
+        move(stage4, 51);
         break;
       case 3:
-        move(stage4, 100);
+      // 81
+        move(stage4, 103);
         break;
       case 4:
-        move(stage4, 150);
+      // 84
+        move(stage4, 154);
         break;
       case 5:
-        move(stage4, 200);
+      // 85
+        move(stage4, 206);
         break;
       case 6:
-        move(stage4, 250);
+      // 1988
+        move(stage4, 258);
         break;
       case 7:
-        move(stage4, 300);
+      // 1989
+        move(stage4, 308);
         break;
-      case 8://
-        move(stage3, 100);
-        move(stage4, 350);
-        $('.page-container').css('background-image','url(img/80-90_02.png)');
+      case 8:
+      // 90
+        move(stage3, 103);
+        move(stage4, 360);
+        $('.page').css('background-image','url(img/80-90_02.png)');
         break;
-      case 9:
-        move(stage4, 400);
+      case 10:
+      // 91
+        move(stage4, 411);
         break;
-      case 11:
-        move(stage4, 450);
-        break;
-      case 14:
-        move(stage4, 500);
+      case 12:
+      // 92
+        move(stage4, 463);
         break;
       case 15:
-        move(stage4, 550);
+      // 94
+        move(stage4, 514);
         break;
       case 16:
-        move(stage4, 600);
+      // 97
+        move(stage4, 566);
         break;
-      case 17://
-        move(stage1, 50);
-        move(stage2, 50);
-        move(stage3, 150);
-        move(stage4, 650);
-        $('.page-container').css('background-image','url(img/00-10_02.png)');
+      case 17:
+      // 99
+        move(stage4, 617);
         break;
       case 18:
-        move(stage4, 700);
+      // 00
+        move(stage1, 51);
+        move(stage2, 51);
+        move(stage3, 155);
+        move(stage4, 669);
+        $('.page').css('background-image','url(img/00-10_02.png)');
         break;
       case 19:
-        move(stage4, 750);
+      // 04
+        move(stage4, 720);
         break;
-      case 21:
-        move(stage4, 800);
+      case 20:
+      // 05
+        move(stage4, 772);
         break;
-      case 25:
-        move(stage4, 850);
+      case 22:
+      // 06
+        move(stage4, 823);
         break;
       case 26:
-        move(stage4, 900);
+      // 07
+        move(stage4, 875);
         break;
-      case 29://
-        move(stage3, 200);
-        move(stage4, 950);
+      case 27:
+      // 08
+        move(stage4, 926);
         break;
       case 30:
-        move(stage4, 1000);
-        $('.page-container').css('background-image','url(img/10-18_02.png)');
+      // 10
+        move(stage3, 206);
+        move(stage4, 977);
         break;
       case 31:
-        move(stage4, 1050);
+      // 11
+        move(stage4, 1029);
+        $('.page').css('background-image','url(img/10-18_02.png)');
         break;
-      case 33:
-        move(stage4, 1100);
+      case 32:
+      // 12
+        move(stage4, 1080);
         break;
       case 34:
-        move(stage4, 1150);
+      // 13
+        move(stage4, 1131);
         break;
-      case 36:
-        move(stage4, 1200);
+      case 35:
+      // 14
+        move(stage4, 1183);
         break;
-      case 38:
-        move(stage4, 1250);
+      case 37:
+      // 15
+        move(stage4, 1234);
         break;
-      case 40:
-        move(stage4, 1300);
+      case 39:
+      // 16
+        move(stage4, 1286);
+        break;
+      case 41:
+      // 17
+        move(stage4, 1337);
+        $('.page .head').css('opacity', '0');
         clearInterval(timer);
-        $('.page-container .head').css('visibility', 'hidden');
         break;
       default:
         break;
     }
   }
-  setTimeout(function() {
-    $(".gif").animate({"opacity": "0"},1000);
-    $(".page").animate({"opacity": "1"},1000);
-  }, 8000);
-  setTimeout(function() {
-    var timer = setInterval(circle, 4000);
-  }, 5000);
+ 
   
   function getStyle(obj, attr) {
     if (window.getComputedStyle) {
@@ -122,12 +150,12 @@ window.onload = function() {
   function move(dom, value){
     var moveTimer = setInterval(function() {
       var top = getStyle(dom, 'top');
-      top = parseInt(top)- 5;
+      top = parseInt(top) -1;
       dom.style.top = top + 'px';
       if (top == -(value)) {
         clearInterval(moveTimer);
       }
-    }, 30);
+    }, 6);
   }
 }
 
