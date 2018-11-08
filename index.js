@@ -1,12 +1,5 @@
 window.onload = function() {
   
-setTimeout(function() {
-  $(".gif").animate({"opacity": "0"},1000);
-  $(".page").animate({"opacity": "1"},1000);
-}, 8000);
-setTimeout(function() {
-  var timer = setInterval(circle, 4000);
-}, 5000);
 
  
   // document.addEventListener('DOMContentLoaded', function() {
@@ -117,12 +110,19 @@ setTimeout(function() {
       case 40:
         move(stage4, 1300);
         clearInterval(timer);
-        $('.head').css('visibility', 'hidden');
+        $('.page-container .head').css('visibility', 'hidden');
         break;
       default:
         break;
     }
   }
+  setTimeout(function() {
+    $(".gif").animate({"opacity": "0"},1000);
+    $(".page").animate({"opacity": "1"},1000);
+  }, 8000);
+  setTimeout(function() {
+    var timer = setInterval(circle, 4000);
+  }, 5000);
   
   function getStyle(obj, attr) {
     if (window.getComputedStyle) {
@@ -147,13 +147,13 @@ function fn(){
   var music=document.getElementsByClassName("music")[0];
   if(musicAudio.muted){
     musicAudio.muted=false; //静音
-    music.style.backgroundImage="url(img/music-off.png)";
-    music.style.animation="music 0s";
+    music.style.backgroundImage="url(img/music-on.png)";
+    music.style.animation="music 3s linear infinite";
     // musicAudio.play();
   }else{
     musicAudio.muted=true;
-    music.style.backgroundImage="url(img/music-on.png)";
-    music.style.animation="music 3s linear infinite";
+    music.style.backgroundImage="url(img/music-off.png)";
+    music.style.animation="music 0";
     // musicAudio.paused;
   }
 }
