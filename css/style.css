@@ -182,16 +182,16 @@ html, body {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 14px;
+  top: 15px;
   width: 65px;
   height: 60px;
   overflow: hidden; }
   .stage-1-img, .stage-2-img, .stage-3-img, .stage-4-img {
-    position: absolute; }
+    position: relative; }
     .stage-1-img img, .stage-2-img img, .stage-3-img img, .stage-4-img img {
       display: inline-block;
       width: 65px;
-      height: 50px; }
+      height: 60px; }
 
 .stage-1 {
   left: 15px; }

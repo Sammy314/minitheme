@@ -21,24 +21,24 @@ window.onload = function() {
         break;
       case 2:
       // 80
-        move(stage3, 57);
-        move(stage4, 57);
+        move(stage3, 65);
+        move(stage4, 65);
         break;
       case 3:
       // 81
-        move(stage4, 114);
+        move(stage4, 131);
         break;
       case 4:
       // 84
-        move(stage4, 176);
+        move(stage4, 198);
         break;
       case 5:
       // 85
-        move(stage4, 234);
+        move(stage4, 264);
         break;
       case 6:
       // 1988
-        move(stage4, 291);
+        move(stage4, 332);
         break;
       case 7:
       // 1989
