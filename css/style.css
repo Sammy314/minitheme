@@ -165,6 +165,9 @@ html, body {
 
 .head-img {
   position: relative; }
+  .head-img img {
+    width: 375px;
+    height: 132px; }
 
 .stage-1 {
   display: flex;

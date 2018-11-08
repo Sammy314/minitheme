@@ -36,6 +36,10 @@ html, body{
 }
 .head-img {
   position: relative;
+  img {
+    width: 375px;
+    height: 132px;
+  }
 }
 .stage-1 {
   display: flex;
