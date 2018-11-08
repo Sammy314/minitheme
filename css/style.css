@@ -161,27 +161,31 @@ html, body {
   position: relative;
   height: 110px;
   background-size: 85%;
-  margin-top: 30px; }
-
-.head-img {
-  position: relative;
-  width: 375px;
-  height: 132px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.head-img {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  background-image: url(../img/time1.png);
+  background-repeat: no-repeat;
+  background-size: 100%; }
   .head-img img {
-    width: 375px;
-    height: 132px; }
+    width: 100%;
+    height: 100%; }
 
 .stage-1 {
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: 29px;
+  top: 20px;
   width: 46px;
-  height: 46px;
-  left: 48px;
+  height: 45px;
+  left: 58px;
   overflow: hidden; }
   .stage-1 .stage-1-img {
     position: absolute; }
@@ -192,11 +196,12 @@ html, body {
 .stage-2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: 29px;
+  top: 20px;
   width: 46px;
-  height: 46px;
-  left: 122px;
+  height: 45px;
+  left: 132px;
   overflow: hidden; }
   .stage-2 .stage-2-img {
     position: absolute; }
@@ -207,11 +212,12 @@ html, body {
 .stage-3 {
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: 29px;
+  top: 20px;
   width: 46px;
-  height: 46px;
-  left: 196px;
+  height: 45px;
+  left: 202px;
   overflow: hidden; }
   .stage-3 .stage-3-img {
     position: absolute;
@@ -223,11 +229,12 @@ html, body {
 .stage-4 {
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: 29px;
+  top: 20px;
   width: 46px;
-  height: 46px;
-  left: 268px;
+  height: 45px;
+  left: 274px;
   overflow: hidden; }
   .stage-4 .stage-4-img {
     position: absolute; }

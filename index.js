@@ -4,10 +4,10 @@ window.onload = function() {
   setTimeout(function() {
     $(".gif").animate({"opacity": "0"},1000);
     $(".page").animate({"opacity": "1"},1000);
-  }, 8000);
+  }, 300);
   setTimeout(function() {
-    var timer = setInterval(circle, 4000);
-  }, 8000);
+    var timer = setInterval(circle, 2000);
+  }, 300);
   var count = 1;
   function circle(){
     var page = document.getElementsByClassName('class')[count];
@@ -128,12 +128,12 @@ window.onload = function() {
       // 16
         move(stage4, 1286);
         break;
-      case 41:
-      // 17
-        move(stage4, 1337);
-        $('.page .head').css('opacity', '0');
-        clearInterval(timer);
-        break;
+      // case 41:
+      // // 17
+      //   move(stage4, 1337);
+      //   $('.page .head').css('opacity', '0');
+      //   clearInterval(timer);
+      //   break;
       default:
         break;
     }
