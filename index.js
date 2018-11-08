@@ -42,98 +42,98 @@ window.onload = function() {
         break;
       case 7:
       // 1989
-        move(stage4, 350);
+        move(stage4, 398);
         break;
       case 8:
       // 90
-        move(stage3, 117);
-        move(stage4, 409);
+        move(stage3, 133);
+        move(stage4, 464);
         $('.page').css('background-image','url(img/80-90_02.png)');
         break;
       case 10:
       // 91
-        move(stage4, 467);
+        move(stage4, 530);
         break;
       case 12:
       // 92
-        move(stage4, 525);
+        move(stage4, 597);
         break;
       case 15:
       // 94
-        move(stage4, 514);
+        move(stage4, 664);
         break;
       case 16:
       // 97
-        move(stage4, 566);
+        move(stage4, 729);
         break;
       case 17:
       // 99
-        move(stage4, 617);
+        move(stage4, 797);
         break;
       case 18:
       // 00
-        move(stage1, 58);
-        move(stage2, 58);
-        move(stage3, 155);
-        move(stage4, 669);
+        move(stage1, 65);
+        move(stage2, 65);
+        move(stage3, 198);
+        move(stage4, 863);
         $('.page').css('background-image','url(img/00-10_02.png)');
         break;
       case 19:
       // 04
-        move(stage4, 720);
+        move(stage4, 928);
         break;
       case 20:
       // 05
-        move(stage4, 772);
+        move(stage4, 994);
         break;
       case 22:
       // 06
-        move(stage4, 823);
+        move(stage4, 1061);
         break;
       case 26:
       // 07
-        move(stage4, 875);
+        move(stage4, 1127);
         break;
       case 27:
       // 08
-        move(stage4, 926);
+        move(stage4, 1194);
         break;
       case 30:
       // 10
-        move(stage3, 206);
-        move(stage4, 977);
+        move(stage3, 264);
+        move(stage4, 1260);
         break;
       case 31:
       // 11
-        move(stage4, 1029);
+        move(stage4, 1326);
         $('.page').css('background-image','url(img/10-18_02.png)');
         break;
       case 32:
       // 12
-        move(stage4, 1080);
+        move(stage4, 1394);
         break;
       case 34:
       // 13
-        move(stage4, 1131);
+        move(stage4, 1460);
         break;
       case 35:
       // 14
-        move(stage4, 1183);
+        move(stage4, 1526);
         break;
       case 37:
       // 15
-        move(stage4, 1234);
+        move(stage4, 1592);
         break;
       case 39:
       // 16
-        move(stage4, 1286);
+        move(stage4, 1659);
         break;
-      // case 41:
-      // // 17
-      //   move(stage4, 1337);
-      //   $('.page .head').css('opacity', '0');
-      //   clearInterval(timer);
-      //   break;
+      case 41:
+      // 17
+        move(stage4, 1725);
+        // $('.page .head').css('opacity', '0');
+        clearInterval(timer);
+        break;
       default:
         break;
     }
