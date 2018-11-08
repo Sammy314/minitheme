@@ -174,12 +174,12 @@ html, body{
     background: url(../img/clock.gif) no-repeat center;
     background-size: 100%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: px2rem(60);
   }
   .tip {
     font-size: px2rem(30);
     color: #aa8675;
     letter-spacing: 3px;
-    margin-top: px2rem(-90);
+    // margin-top: px2rem(-90);
   }
 }

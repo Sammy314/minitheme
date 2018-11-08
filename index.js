@@ -4,15 +4,14 @@ window.onload = function() {
   setTimeout(function() {
     $(".gif").animate({"opacity": "0"},1000);
     $(".page").animate({"opacity": "1"},1000);
-  }, 300);
+  }, 8000);
   setTimeout(function() {
-    var timer = setInterval(circle, 2000);
-  }, 300);
+    var timer = setInterval(circle, 4000);
+  }, 8000);
   var count = 1;
   function circle(){
     var page = document.getElementsByClassName('class')[count];
     $('.body').children().eq(count).addClass("show").siblings().removeClass('show');
-    // $('.body').eq(count).addClass("show").siblings().removeClass('show');
     count++;
     
     switch (count) {
@@ -131,7 +130,7 @@ window.onload = function() {
       case 41:
       // 17
         move(stage4, 1725);
-        // $('.page .head').css('opacity', '0');
+        $('.page .head').css('opacity', '0');
         clearInterval(timer);
         break;
       default:

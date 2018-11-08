@@ -287,12 +287,11 @@ html, body {
     background: url(../img/clock.gif) no-repeat center;
     background-size: 100%;
     margin: auto;
-    margin-top: 30px; }
+    margin-top: 1.28rem; }
   .gif .tip {
     font-size: 0.64rem;
     color: #aa8675;
-    letter-spacing: 3px;
-    margin-top: -1.92rem; }
+    letter-spacing: 3px; }
 
 .stage-1-icon {
   width: 1.92rem;
