@@ -21,12 +21,12 @@ window.onload = function() {
         break;
       case 2:
       // 80
-        move(stage3, 58);
-        move(stage4, 58);
+        move(stage3, 57);
+        move(stage4, 57);
         break;
       case 3:
       // 81
-        move(stage4, 117);
+        move(stage4, 114);
         break;
       case 4:
       // 84
@@ -52,11 +52,11 @@ window.onload = function() {
         break;
       case 10:
       // 91
-        move(stage4, 411);
+        move(stage4, 467);
         break;
       case 12:
       // 92
-        move(stage4, 463);
+        move(stage4, 525);
         break;
       case 15:
       // 94
@@ -72,8 +72,8 @@ window.onload = function() {
         break;
       case 18:
       // 00
-        move(stage1, 51);
-        move(stage2, 51);
+        move(stage1, 58);
+        move(stage2, 58);
         move(stage3, 155);
         move(stage4, 669);
         $('.page').css('background-image','url(img/00-10_02.png)');
