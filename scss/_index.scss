@@ -15,8 +15,10 @@ html, body{
   top: px2rem(26);
   width: px2rem(60);
   height: px2rem(62);
-  background: url(../img/music-off.png) no-repeat center;
+  background: url(../img/music-on.png) no-repeat center;
   background-size: 100%;
+  cursor: pointer;
+  animation: music 3s linear infinite;
 }
 @keyframes music {
   0% {
@@ -28,11 +30,17 @@ html, body{
 }
 .head {
   position: relative;
-  height: px2rem(220);
+  // height: px2rem(220);
+  height: 110px;
   /* background: url(img/head.png) no-repeat center; */
-  background: url(../img/time.png) no-repeat 63% 50%;
+  // background: url(../img/time.png) no-repeat 63% 50%;
   background-size: 85%;
   margin-top: 30px;
+}
+.head-img {
+  position: relative;
+  width: 255px;
+  height: 72px;
 }
 .stage-1 {
   display: flex;
@@ -88,6 +96,23 @@ html, body{
     }
   }
 }
+.stage-4 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 23px;
+  width: 46px;
+  height: 46px;
+  left: 260px;
+  overflow: hidden;
+  .stage-4-img {
+    position: absolute;
+    img {
+      width: 46px;
+      height: 42px;
+    }
+  }
+}
 .img {
 }
 .img-1 {
@@ -110,7 +135,7 @@ html, body{
 .title {
   animation: body 4s infinite; 
   font-size: px2rem(46);
-  font-family: "方正正大黑简体";
+  font-family: "DIN-BoldItalicAlt";
   font-weight: 900;
   padding: 0 px2rem(40);
 }
@@ -171,7 +196,7 @@ html, body{
     height: px2rem(400);
   }
 }
-.page {
+.page, .gif {
   position: absolute;
   top: 0;
   left: 0;
@@ -181,24 +206,15 @@ html, body{
   height: 100%;
   overflow: hidden;
   text-align: center;
-  background-image: url(../img/79-89_02.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+.page {
+  background-image: url(../img/79-89_02.png);
   opacity: 0;
 }
 .gif {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  text-align: center;
   background-image: url(../img/start.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   .clock {
     width: px2rem(380);
     height: 70%;
@@ -211,6 +227,6 @@ html, body{
     font-size: px2rem(30);
     color: #aa8675;
     letter-spacing: 3px;
-    margin-top: px2rem(-120);
+    margin-top: px2rem(-100);
   }
 }

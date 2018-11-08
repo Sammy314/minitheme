@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="./animate.min.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
+    @font-face{
+      font-family: "方正正大黑简体";
+      src: url('DIN-BoldItalicAlt.otf');
+    }
     .animated{
       animation-duration: 3s;
     }
@@ -26,40 +30,70 @@
     </div>
     <div class="page">
       <div class="music" onclick="fn()"></div>
-      <audio id="musicAudio" loop="loop" muted="muted">
+      <audio id="musicAudio" loop="loop" autoplay>
         <source src="IDo.mp3" type="audio/mpeg">
       </audio>
       <div class="head">
-        <ul class="stage-1">
-            <div class="stage-1-img">
-                <img src="img/1.png">
-                <img src="img/2.png">
-            </div>
-        </ul>
-        <ul class="stage-2">
-            <div class="stage-2-img">
-                <img src="img/9.png">
+        <div class="head-img">
+          <img src="img/time.png">
+        </div>
+          <ul class="stage-1">
+              <div id="stage1" class="stage-1-img">
+                  <img src="img/1.png">
+                  <img src="img/2.png">
+              </div>
+          </ul>
+          <ul class="stage-2">
+              <div id="stage2" class="stage-2-img">
+                  <img src="img/9.png">
+                  <img src="img/0.png">
+              </div>
+          </ul>
+          <ul class="stage-3">
+              <div id="stage3" class="stage-3-img">
+                  <img src="img/7.png">
+                  <img src="img/8.png">
+                  <img src="img/9.png">
+                  <img src="img/0.png">
+                  <img src="img/1.png">
+              </div>
+          </ul>
+          <ul class="stage-4">
+              <div id="stage4" class="stage-4-img">
+                <img src="img/8.png">
                 <img src="img/0.png">
-            </div>
-        </ul>
-        <ul class="stage-3">
-            <div class="stage-3-img" id="stage3">
-                <img src="img/7.png">
+                <img src="img/1.png">
+                <img src="img/4.png">
+                <img src="img/5.png">
                 <img src="img/8.png">
                 <img src="img/9.png">
                 <img src="img/0.png">
                 <img src="img/1.png">
-            </div>
-        </ul>
-        <!-- <img src="img/1.png" class="img img-1">
-        <img src="img/9.png" class="img img-2">
-        <img src="img/7.png" class="img img-3">
-        <img src="img/8.png" class="img img-4"> -->
-      </div>
+                <img src="img/2.png">
+                <img src="img/4.png">
+                <img src="img/7.png">
+                <img src="img/9.png">
+                <img src="img/0.png">
+                <img src="img/4.png">
+                <img src="img/5.png">
+                <img src="img/6.png">
+                <img src="img/7.png">
+                <img src="img/8.png">
+                <img src="img/0.png">
+                <img src="img/1.png">
+                <img src="img/2.png">
+                <img src="img/3.png">
+                <img src="img/4.png">
+                <img src="img/5.png">
+                <img src="img/6.png">
+                <img src="img/7.png">
+              </div>
+          </ul>
+        </div>
       <div class="body">
           <!-- 1978 -->
           <div class="class show nopic">
-            <div class="title"> 邛崃开启农业生产责任制试点</div>
+            <div class="title">邛崃开启农业生产责任制试点</div>
             <div class="con">中共邛崃县委在前进、桑园两个公社进行“建立分组作业，三统一包，联产计酬，增产分成”试点工作。</div>
             <!-- <div class="pic animated zoomInLeft">
               <img src="img/1980.jpg">
@@ -70,7 +104,7 @@
             <div class="title">开启农工商综合经营之路</div>
             <div class="con">前进公社凤凰大队成立邛崃县凤凰农工商联合企业，全县先后43个大队（村）走上农工商综合经营之路。</div>
             <div class="pic animated bounceInLeft">
-                <img src="img/1980.jpg">
+              <img src="img/1980.jpg">
             </div>
           </div>
           <!-- 1981 -->
