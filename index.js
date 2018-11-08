@@ -47,7 +47,7 @@ window.onload = function() {
       case 8:
       // 90
         move(stage3, 117);
-        move(stage4, 360);
+        move(stage4, 409);
         $('.page').css('background-image','url(img/80-90_02.png)');
         break;
       case 10:
