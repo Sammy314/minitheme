@@ -1,6 +1,4 @@
 window.onload = function() {
-  
-  var year = [ '1978', '1980', '1981', '1984', '1985', '1988', '1989', '1990','1990', '1991', '1991', '1992', '1992', '1992', '1994', '1997', '1999', '2000', '2004', '2005', '2005', '2006', '2006', '2006', '2006', '2007', '2008', '2008', '2008', '2010', '2011', '2012', '2012', '2013', '2014', '2014', '2015', '2015', '2016', '2016', '2017'];
   setTimeout(function() {
     $(".gif").hide();
     $(".canvas-wrap").hide();
@@ -8,7 +6,7 @@ window.onload = function() {
   }, 8000);
   setTimeout(function() {
     var timer = setInterval(circle, 4000);
-  }, 9000);
+  }, 8500);
   var count = 1;
   function circle(){
     var page = document.getElementsByClassName('class')[count];
@@ -152,9 +150,9 @@ window.onload = function() {
   }
   function move(dom, value){
     var moveTimer = setInterval(function() {
-      var top = getStyle(dom, 'top');
+      var top = getStyle(dom, 'backgroundPositionY');
       top = parseInt(top) -1;
-      dom.style.top = top + 'px';
+      dom.style.backgroundPositionY = top + 'px';
       if (top == -(value)) {
         clearInterval(moveTimer);
       }
