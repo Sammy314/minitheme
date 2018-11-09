@@ -279,7 +279,7 @@ html, body {
     border: 0;
     height: 8.5333333333rem; }
 
-.page, .gif {
+.page, .gif, .bg-pic {
   position: relative;
   top: 0;
   left: 0;
@@ -296,6 +296,11 @@ html, body {
   background-image: url(../img/79-89_02.png);
   opacity: 0; }
 
+.bg-pic {
+  background-image: url(../img/bgbg.png);
+  z-index: -2;
+  position: absolute; }
+
 .gif .clock {
   width: 8.1066666667rem;
   height: 70%;
@@ -308,6 +313,10 @@ html, body {
   color: #aa8675;
   letter-spacing: 3px;
   margin-top: 0.8533333333rem; }
+.gif div:only-child {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .canvas-wrap {
   position: absolute;

@@ -167,7 +167,7 @@ html, body{
     height: px2rem(400);
   }
 }
-.page, .gif {
+.page, .gif, .bg-pic {
   position: relative;
   top: 0;
   left: 0;
@@ -183,6 +183,11 @@ html, body{
 .page {
   background-image: url(../img/79-89_02.png);
   opacity: 0;
+}
+.bg-pic {
+  background-image: url(../img/bgbg.png);
+  z-index: -2;
+  position: absolute;
 }
 .gif {
   // background-image: url(../img/start.jpg);
@@ -201,7 +206,13 @@ html, body{
     margin-top: px2rem(40);
     // margin-top: px2rem(-90);
   }
+  div:only-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
 .canvas-wrap {
   position: absolute;
   top: 0;
