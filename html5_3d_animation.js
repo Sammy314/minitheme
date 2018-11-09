@@ -78,7 +78,8 @@
 
                 }
                 var show = document.getElementById('show');
-                show.appendChild('p');
+                let p = document.createElement('p')
+                show.appendChild(p);
             }
 
             initPoints();
