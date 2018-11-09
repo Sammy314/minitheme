@@ -236,6 +236,9 @@ html, body {
     margin-top: 100px;
     background: #d51e1d; }
 
+.end .title {
+  font-size: 34px; }
+
 @keyframes body {
   10% {
     transform: rotate(360deg); }
@@ -261,7 +264,7 @@ html, body {
   margin-top: 1.28rem;
   border: 3px solid #f8b959; }
   .pic img {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: 100%; }
   .pic.noborder {

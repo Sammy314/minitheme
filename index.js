@@ -4,10 +4,10 @@ window.onload = function() {
   setTimeout(function() {
     $(".gif").animate({"opacity": "0"},1000);
     $(".page").animate({"opacity": "1"},1000);
-  }, 300);
+  }, 8000);
   setTimeout(function() {
-    var timer = setInterval(circle, 2000);
-  }, 300);
+    var timer = setInterval(circle, 4000);
+  }, 8000);
   var count = 1;
   function circle(){
     var page = document.getElementsByClassName('class')[count];
