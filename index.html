@@ -20,6 +20,19 @@
     .animated{
       animation-duration: 3s;
     }
+    .pic-delay{
+      animation: delay 2s;
+      animation-delay: 3s;
+    }
+    @keyframes delay {
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        z-index: -1;
+      }
+    }
   </style>
 </head>
 <body>
@@ -27,6 +40,9 @@
     <div class="gif">
       <div class="clock"></div>
       <div class="tip">时光隧道开启中...</div>
+    </div>
+    <div class="canvas-wrap">
+      <canvas id="html5_3d_animation"></canvas>
     </div>
     <div class="page">
       <div class="music" onclick="fn()"></div>
@@ -97,7 +113,8 @@
             <div class="title">邛崃开启<br>农业生产责任制试点</div>
             <div class="con">中共邛崃县委在前进、桑园两个公社进行“建立分组作业，三统一包，联产计酬，增产分成”试点工作。</div>
             <!-- <div class="pic animated zoomInLeft">
-              <img src="img/1985.jpg">
+                <img src="img/2008.jpg">
+                <img src="img/20082.jpg" class="pic-delay">
             </div> -->
           </div>
           <!-- 1980 -->
@@ -221,11 +238,11 @@
             </div> -->
           </div>
           <!-- 2005 -->
-          <div class="class nopic">
+          <div class="class">
             <div class="title">平乐镇被国家环保总局<br>授予“全国环境优美镇”称号</div>
-            <!-- <div class="pic animated rubberBand">
-                <img src="img/1980.jpg">
-            </div> -->
+            <div class="pic animated rubberBand">
+                <img src="img/2005.jpg">
+            </div>
           </div>
           <div class="class nopic">
             <div class="title">荣获“2005全国县城视频<br>经济发展示范县（县级市）”称号</div>
@@ -239,7 +256,7 @@
             </div> -->
           </div>
           <div class="class nopic">
-            <div class="title">天台山入选世界自然遗产名录</div>
+            <div class="title">天台山入选<br>世界自然遗产名录</div>
           </div>
           <div class="class nopic">
             <div class="title">第十届亚洲跳伞锦标赛<br>暨国际跳伞公开赛在邛崃举行</div>
@@ -248,7 +265,7 @@
           <div class="class">
             <div class="title">国家旅游局命名邛崃为<br>“中国优秀旅游城市”</div>
             <div class="pic animated bounceInDown">
-                <img src="img/20062.jpg">
+                <img src="img/2006.jpg">
             </div>
           </div>
           <!-- 2007 -->
@@ -263,8 +280,12 @@
                 <img src="img/1980.jpg">
             </div> -->
           </div>
-          <div class="class nopic">
+          <div class="class">
             <div class="title">邛崃<br>“竹麻号子”“瓷胎竹编”<br>列入第二批国家级非物质文化遗产保护名录</div>
+            <div class="pic animated bounceInUp">
+              <img src="img/2008.jpg">
+              <img src="img/20082.jpg" class="pic-delay">
+            </div>
           </div>
           <div class="class nopic">
             <div class="title">文化部命名平乐镇（竹编）和固驿镇（川剧）为首批“中国民间文化艺术之乡”
@@ -283,18 +304,24 @@
             </div>
           </div>
           <!-- 2012 -->
-          <div class="class nopic">
+          <div class="class">
             <div class="title">花秋茶叶、文君茶叶<br>入选中国茶叶行业百强企业名单</div>
+            <div class="pic animated lightSpeedIn">
+              <img src="img/2012.jpg">
+            </div>
           </div>
-          <div class="class nopic">
+          <div class="class">
             <div class="title">国家质检总局批准对邛酒实施地理标志产品保护</div>
+            <div class="pic animated lightSpeedIn">
+              <img src="img/20122.jpg">
+            </div>
           </div>
           <!-- 2013 -->
           <div class="class">
             <div class="title">芦山地震灾后重建</div>
             <div class="con">面对灾害，邛崃市立即启动应急预案，灾后恢复重建全面推进。</div>
             <div class="pic animated lightSpeedIn">
-                <img src="img/2013.jpg">
+              <img src="img/2013.jpg">
             </div>
           </div>
           <!-- 2014 -->
@@ -309,9 +336,19 @@
             <div class="title">荷兰阿克苏·诺贝尔公司<br>和英国太古集团在羊安工业园区投资共建阿克苏诺贝尔装饰漆生产基地</div>
           </div>
           <!-- 2015 -->
-          <div class="class nopic">
+          <div class="class">
+            <div class="title">“邛崃黑茶”、“邛崃黑猪”被国家质检总局授予国家地理标志保护产品</div>
+            <div class="pic animated lightSpeedIn">
+              <img src="img/2015.jpg">
+              <img src="img/20152.jpg" class="pic-delay">
+            </div>
+          </div>
+          <div class="class">
             <div class="title">制定出台《邛崃市农村土地流转风险防范机制实施意见》</div>
             <div class="con">引入土地流转履约保证保险，进一步探索以市场化方式破解农村土地流转风险。</div>
+            <div class="pic animated lightSpeedIn">
+                <img src="img/20153.png">
+              </div>
           </div>
           <!-- 2016 -->
           <div class="class nopic">
@@ -321,7 +358,7 @@
             <div class="title">天邛产业合作园签约</div>
             <div class="con">邛崃市人民政府与天府新区成都管委会签约共建天府新区天邛产业合作园。</div>
             <div class="pic animated flipInY">
-                <img src="img/20162.png">
+              <img src="img/20162.png">
             </div>
           </div>
           <!-- 2017 -->
@@ -347,7 +384,18 @@
   </div>
 </body>
 <script src="jquery-1.8.3.min.js"></script>
+<script src="html5_3d_animation.js" type="text/javascript"></script>
 <script src="index.js"></script>
 <script>
+$(function() {
+  $("#html5_3d_animation").html5_3d_animation({
+    window_width: '500',
+    window_height: '800',
+    window_background: '#00113F',
+    star_count: '1000',
+    star_color: '#FBFFAF',
+    star_depth: '100'
+  });
+});
 </script>
 </html>

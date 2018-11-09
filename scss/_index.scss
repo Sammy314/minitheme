@@ -88,7 +88,7 @@ html, body{
 .title {
   animation: body 4s infinite; 
   font-size: px2rem(46);
-  font-family: "DIN-BoldItalicAlt";
+  font-family: "方正粗宋_GBK";
   font-weight: 900;
   padding: 0 px2rem(40);
 }
@@ -107,8 +107,9 @@ html, body{
     height: 200px;
     padding: 10px;
     margin: 10px;
-    margin-top: 100px;
+    margin-top: px2rem(140);
     background: #d51e1d;
+    border-radius: 10px;
   }
 }
 .end {
@@ -138,10 +139,11 @@ html, body{
   line-height: px2rem(40);
   letter-spacing: 0.5px;
   font-weight: 900;
-  font-family: "DIN-BoldItalicAlt";
+  font-family: "方正粗宋_GBK";
   padding: 0 px2rem(40);
 }
 .pic {
+  position: relative;
   height: px2rem(340);
   margin: 0 px2rem(60);
   margin-top: px2rem(60);
@@ -154,6 +156,11 @@ html, body{
     display: block;
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
   &.noborder {
     border: 0;
@@ -161,7 +168,7 @@ html, body{
   }
 }
 .page, .gif {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   bottom: 0;
@@ -178,7 +185,7 @@ html, body{
   opacity: 0;
 }
 .gif {
-  background-image: url(../img/start.jpg);
+  // background-image: url(../img/start.jpg);
   .clock {
     width: px2rem(380);
     height: 70%;
@@ -194,4 +201,9 @@ html, body{
     margin-top: px2rem(40);
     // margin-top: px2rem(-90);
   }
+}
+.canvas-wrap {
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }

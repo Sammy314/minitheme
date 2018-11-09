@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
   H5 Reset
 -------------------------------------------------------------------------------*/
@@ -214,7 +215,7 @@ html, body {
 .title {
   animation: body 4s infinite;
   font-size: 0.9813333333rem;
-  font-family: "DIN-BoldItalicAlt";
+  font-family: "方正粗宋_GBK";
   font-weight: 900;
   padding: 0 0.8533333333rem; }
 
@@ -233,8 +234,9 @@ html, body {
     height: 200px;
     padding: 10px;
     margin: 10px;
-    margin-top: 100px;
-    background: #d51e1d; }
+    margin-top: 2.9866666667rem;
+    background: #d51e1d;
+    border-radius: 10px; }
 
 .end .title {
   font-size: 34px; }
@@ -255,10 +257,11 @@ html, body {
   line-height: 0.8533333333rem;
   letter-spacing: 0.5px;
   font-weight: 900;
-  font-family: "DIN-BoldItalicAlt";
+  font-family: "方正粗宋_GBK";
   padding: 0 0.8533333333rem; }
 
 .pic {
+  position: relative;
   height: 7.2533333333rem;
   margin: 0 1.28rem;
   margin-top: 1.28rem;
@@ -266,13 +269,18 @@ html, body {
   .pic img {
     display: block;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   .pic.noborder {
     border: 0;
     height: 8.5333333333rem; }
 
 .page, .gif {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   bottom: 0;
@@ -288,20 +296,23 @@ html, body {
   background-image: url(../img/79-89_02.png);
   opacity: 0; }
 
-.gif {
-  background-image: url(../img/start.jpg); }
-  .gif .clock {
-    width: 8.1066666667rem;
-    height: 70%;
-    background: url(../img/clock.gif) no-repeat center;
-    background-size: 100%;
-    margin: auto;
-    margin-top: 1.28rem; }
-  .gif .tip {
-    font-size: 0.64rem;
-    color: #aa8675;
-    letter-spacing: 3px;
-    margin-top: 0.8533333333rem; }
+.gif .clock {
+  width: 8.1066666667rem;
+  height: 70%;
+  background: url(../img/clock.gif) no-repeat center;
+  background-size: 100%;
+  margin: auto;
+  margin-top: 1.28rem; }
+.gif .tip {
+  font-size: 0.64rem;
+  color: #aa8675;
+  letter-spacing: 3px;
+  margin-top: 0.8533333333rem; }
+
+.canvas-wrap {
+  position: absolute;
+  top: 0;
+  z-index: -1; }
 
 .stage-1-icon {
   width: 1.92rem;
