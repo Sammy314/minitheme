@@ -4,10 +4,10 @@ window.onload = function() {
   setTimeout(function() {
     $(".gif").animate({"opacity": "0"},1000);
     $(".page").animate({"opacity": "1"},1000);
-  }, 8000);
+  }, 300);
   setTimeout(function() {
-    var timer = setInterval(circle, 4000);
-  }, 8000);
+    var timer = setInterval(circle, 2000);
+  }, 300);
   var count = 1;
   function circle(){
     var page = document.getElementsByClassName('class')[count];
@@ -20,116 +20,116 @@ window.onload = function() {
         break;
       case 2:
       // 80
-        move(stage3, 65);
-        move(stage4, 65);
+        move(stage3, 60);
+        move(stage4, 60);
         break;
       case 3:
       // 81
-        move(stage4, 131);
+        move(stage4, 120);
         break;
       case 4:
       // 84
-        move(stage4, 198);
+        move(stage4, 180);
         break;
       case 5:
       // 85
-        move(stage4, 264);
+        move(stage4, 240);
         break;
       case 6:
       // 1988
-        move(stage4, 332);
+        move(stage4, 302);
         break;
       case 7:
       // 1989
-        move(stage4, 398);
+        move(stage4, 362);
         break;
       case 8:
       // 90
-        move(stage3, 133);
-        move(stage4, 464);
+        move(stage3, 121);
+        move(stage4, 422);
         $('.page').css('background-image','url(img/80-90_02.png)');
         break;
       case 10:
       // 91
-        move(stage4, 530);
+        move(stage4, 482);
         break;
       case 12:
       // 92
-        move(stage4, 597);
+        move(stage4, 543);
         break;
       case 15:
       // 94
-        move(stage4, 664);
+        move(stage4, 603);
         break;
       case 16:
       // 97
-        move(stage4, 729);
+        move(stage4, 663);
         break;
       case 17:
       // 99
-        move(stage4, 797);
+        move(stage4, 725);
         break;
       case 18:
       // 00
-        move(stage1, 65);
-        move(stage2, 65);
-        move(stage3, 198);
-        move(stage4, 863);
+        move(stage1, 60);
+        move(stage2, 60);
+        move(stage3, 180);
+        move(stage4, 785);
         $('.page').css('background-image','url(img/00-10_02.png)');
         break;
       case 19:
       // 04
-        move(stage4, 928);
+        move(stage4, 845);
         break;
       case 20:
       // 05
-        move(stage4, 994);
+        move(stage4, 905);
         break;
       case 22:
       // 06
-        move(stage4, 1061);
+        move(stage4, 965);
         break;
       case 26:
       // 07
-        move(stage4, 1127);
+        move(stage4, 1025);
         break;
       case 27:
       // 08
-        move(stage4, 1194);
+        move(stage4, 1087);
         break;
       case 30:
       // 10
-        move(stage3, 264);
-        move(stage4, 1260);
+        move(stage3, 240);
+        move(stage4, 1147);
         break;
       case 31:
       // 11
-        move(stage4, 1326);
+        move(stage4, 1207);
         $('.page').css('background-image','url(img/10-18_02.png)');
         break;
       case 32:
       // 12
-        move(stage4, 1394);
+        move(stage4, 1267);
         break;
       case 34:
       // 13
-        move(stage4, 1460);
+        move(stage4, 1327);
         break;
       case 35:
       // 14
-        move(stage4, 1526);
+        move(stage4, 1387);
         break;
       case 37:
       // 15
-        move(stage4, 1592);
+        move(stage4, 1449);
         break;
       case 39:
       // 16
-        move(stage4, 1659);
+        move(stage4, 1509);
         break;
       case 41:
       // 17
-        move(stage4, 1725);
+        move(stage4, 1569);
         $('.page .head').css('opacity', '0');
         clearInterval(timer);
         break;
