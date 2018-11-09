@@ -145,6 +145,7 @@ html, body {
   position: absolute;
   right: 0.4266666667rem;
   top: 0.5546666667rem;
+  z-index: 9;
   width: 1.28rem;
   height: 1.3226666667rem;
   background: url(../img/music-on.png) no-repeat center;

@@ -13,6 +13,7 @@ html, body{
   position: absolute;
   right: px2rem(20);
   top: px2rem(26);
+  z-index: 9;
   width: px2rem(60);
   height: px2rem(62);
   background: url(../img/music-on.png) no-repeat center;
