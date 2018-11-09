@@ -188,6 +188,11 @@ html, body{
   background-image: url(../img/bgbg.png);
   z-index: -2;
   position: absolute;
+  display: flex;
+  font-size: 30px;
+  color: #aa8675;
+  align-items: center;
+  justify-content: center;
 }
 .gif {
   // background-image: url(../img/start.jpg);
