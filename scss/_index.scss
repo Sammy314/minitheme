@@ -61,12 +61,9 @@ html, body{
   &-img {
     position: relative;
     img {
-      display: inline-block;
+      display: block;
       width: 65px;
       height: 60px;
-    }
-    img + img {
-      margin-top: -6px;
     }
   }
 }

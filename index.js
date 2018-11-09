@@ -37,99 +37,99 @@ window.onload = function() {
         break;
       case 6:
       // 1988
-        move(stage4, 302);
+        move(stage4, 300);
         break;
       case 7:
       // 1989
-        move(stage4, 362);
+        move(stage4, 360);
         break;
       case 8:
       // 90
-        move(stage3, 121);
-        move(stage4, 422);
+        move(stage3, 120);
+        move(stage4, 420);
         $('.page').css('background-image','url(img/80-90_02.png)');
         break;
       case 10:
       // 91
-        move(stage4, 482);
+        move(stage4, 480);
         break;
       case 12:
       // 92
-        move(stage4, 543);
+        move(stage4, 540);
         break;
       case 15:
       // 94
-        move(stage4, 603);
+        move(stage4, 600);
         break;
       case 16:
       // 97
-        move(stage4, 663);
+        move(stage4, 660);
         break;
       case 17:
       // 99
-        move(stage4, 725);
+        move(stage4, 720);
         break;
       case 18:
       // 00
         move(stage1, 60);
         move(stage2, 60);
         move(stage3, 180);
-        move(stage4, 785);
+        move(stage4, 780);
         $('.page').css('background-image','url(img/00-10_02.png)');
         break;
       case 19:
       // 04
-        move(stage4, 845);
+        move(stage4, 840);
         break;
       case 20:
       // 05
-        move(stage4, 905);
+        move(stage4, 900);
         break;
       case 22:
       // 06
-        move(stage4, 965);
+        move(stage4, 960);
         break;
       case 26:
       // 07
-        move(stage4, 1025);
+        move(stage4, 1020);
         break;
       case 27:
       // 08
-        move(stage4, 1087);
+        move(stage4, 1080);
         break;
       case 30:
       // 10
         move(stage3, 240);
-        move(stage4, 1147);
+        move(stage4, 1140);
         break;
       case 31:
       // 11
-        move(stage4, 1207);
+        move(stage4, 1200);
         $('.page').css('background-image','url(img/10-18_02.png)');
         break;
       case 32:
       // 12
-        move(stage4, 1267);
+        move(stage4, 1260);
         break;
       case 34:
       // 13
-        move(stage4, 1327);
+        move(stage4, 1320);
         break;
       case 35:
       // 14
-        move(stage4, 1387);
+        move(stage4, 1380);
         break;
       case 37:
       // 15
-        move(stage4, 1449);
+        move(stage4, 1440);
         break;
       case 39:
       // 16
-        move(stage4, 1509);
+        move(stage4, 1500);
         break;
       case 41:
       // 17
-        move(stage4, 1569);
+        move(stage4, 1560);
         $('.page .head').css('opacity', '0');
         clearInterval(timer);
         break;

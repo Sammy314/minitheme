@@ -189,11 +189,9 @@ html, body {
   .stage-1-img, .stage-2-img, .stage-3-img, .stage-4-img {
     position: relative; }
     .stage-1-img img, .stage-2-img img, .stage-3-img img, .stage-4-img img {
-      display: inline-block;
+      display: block;
       width: 65px;
       height: 60px; }
-    .stage-1-img img + img, .stage-2-img img + img, .stage-3-img img + img, .stage-4-img img + img {
-      margin-top: -6px; }
 
 .stage-1 {
   left: 15px; }
