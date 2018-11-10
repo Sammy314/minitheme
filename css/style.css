@@ -131,9 +131,13 @@ html, body {
   overflow-scrolling: touch;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
+@font-face {
+  font-family: "方正粗宋_GBK";
+  src: url(../fzcsGBK.ttf); }
 html, body {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  font-family: "方正粗宋_GBK"; }
 
 .page-container {
   width: 100%;
@@ -228,7 +232,6 @@ html, body {
 .title {
   animation: body 4s infinite;
   font-size: 0.9813333333rem;
-  font-family: "方正粗宋_GBK";
   font-weight: 900;
   padding: 0 0.8533333333rem; }
 
@@ -270,7 +273,6 @@ html, body {
   line-height: 0.8533333333rem;
   letter-spacing: 0.5px;
   font-weight: 900;
-  font-family: "方正粗宋_GBK";
   padding: 0 0.8533333333rem; }
 
 .pic {
