@@ -176,12 +176,12 @@ function fn(){
   if(musicAudio.muted){
     musicAudio.muted=false; //静音
     music.style.backgroundImage="url(img/music-on.png)";
-    music.style.animation="music 3s linear infinite";
+    music.style.animation="rotating 3s linear infinite";
     musicAudio.paused;
   }else{
     musicAudio.muted=true;
     music.style.backgroundImage="url(img/music-off.png)";
-    music.style.animation="music 0s";
+    music.style.animation="rotating 0s";
     musicAudio.play();
   }
 }

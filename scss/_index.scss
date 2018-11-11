@@ -1,11 +1,11 @@
 @font-face{
-  font-family: "方正粗宋_GBK";
-  src: url(../fzcsGBK.ttf);
+  font-family: "华文中宋";
+  src: url(../hwzs.ttf);
 }
 html, body{
   height: 100%;
   width: 100%;
-  font-family: "方正粗宋_GBK";
+  font-family: "华文中宋";
 }
 .page-container {
   width: 100%;
@@ -18,15 +18,15 @@ html, body{
   position: absolute;
   right: px2rem(20);
   top: px2rem(26);
-  z-index: 9;
+  z-index: 99;
   width: px2rem(60);
   height: px2rem(62);
   background: url(../img/music-on.png) no-repeat center;
   background-size: 100%;
   cursor: pointer;
-  animation: music 3s linear infinite;
+  animation: rotating 3s linear infinite;
 }
-@keyframes music {
+@keyframes rotating {
   0% {
     transform: rotate(0deg);
   }
@@ -132,6 +132,7 @@ html, body{
     margin-top: px2rem(140);
     background: #d51e1d;
     border-radius: 10px;
+    color: #fff;
   }
 }
 .end {
