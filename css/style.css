@@ -324,22 +324,26 @@ html, body {
   justify-content: center; }
 
 .gif .clock {
-  width: 8.1066666667rem;
+  position: relative;
+  width: 8.5333333333rem;
   height: 70%;
   background: url(../img/clock.gif) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
   margin: auto;
-  margin-top: 1.28rem; }
+  margin-top: 2.1333333333rem; }
 .gif .tip {
   font-size: 0.64rem;
   color: #aa8675;
   letter-spacing: 3px;
   margin-top: 0.8533333333rem; }
-.gif div:only-child {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    transform-origin: bottom; }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: bottom; } }
 .canvas-wrap {
   position: absolute;
   top: 0;

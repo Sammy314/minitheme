@@ -216,12 +216,13 @@ html, body{
 }
 .gif {
   .clock {
-    width: px2rem(380);
+    position: relative;
+    width: px2rem(400);
     height: 70%;
     background: url(../img/clock.gif) no-repeat center;
-    background-size: 100%;
+    background-size: contain;
     margin: auto;
-    margin-top: px2rem(60);
+    margin-top: px2rem(100);
   }
   .tip {
     font-size: px2rem(30);
@@ -229,10 +230,15 @@ html, body{
     letter-spacing: 3px;
     margin-top: px2rem(40);
   }
-  div:only-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: bottom;
   }
 }
 .canvas-wrap {

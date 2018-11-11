@@ -3,10 +3,10 @@ window.onload = function() {
     $(".gif").hide();
     $(".canvas-wrap").hide();
     $(".page").animate({"opacity": "1"},1000);
-  }, 8000);
+  }, 300);
   setTimeout(function() {
-    var timer = setInterval(circle, 4000);
-  }, 8500);
+    var timer = setInterval(circle, 1000);
+  }, 300);
   var count = 1;
   function circle(){
     var page = document.getElementsByClassName('class')[count];
@@ -159,7 +159,35 @@ window.onload = function() {
     }, 6);
   }
 }
+// // 音乐播放
+// function autoPlayMusic() {
+//   // 自动播放音乐效果，解决浏览器或者APP自动播放问题
+//   function musicInBrowserHandler() {
+//       musicPlay(true);
+//       document.body.removeEventListener('touchstart', musicInBrowserHandler);
+//   }
+//   document.body.addEventListener('touchstart', musicInBrowserHandler);
 
+//   // 自动播放音乐效果，解决微信自动播放问题
+//   function musicInWeixinHandler() {
+//       musicPlay(true);
+//       document.addEventListener("WeixinJSBridgeReady", function () {
+//           musicPlay(true);
+//       }, false);
+//       document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
+//   }
+//   document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
+// }
+// function musicPlay(isPlay) {
+//   var audio = document.getElementById('musicAudio');
+//   if (isPlay && audio.paused) {
+//       audio.play();
+//   }
+//   if (!isPlay && !audio.paused) {
+//       audio.pause();
+//   }
+// }
+// autoPlayMusic();
 
 function fn(){
   var musicAudio=document.getElementById("musicAudio");
@@ -185,3 +213,5 @@ function fn(){
     musicAudio.play();
   }
 }
+
+
