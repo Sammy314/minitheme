@@ -3,10 +3,10 @@ window.onload = function() {
     $(".gif").hide();
     $(".canvas-wrap").hide();
     $(".page").animate({"opacity": "1"},1000);
-  }, 300);
+  }, 8000);
   setTimeout(function() {
-    var timer = setInterval(circle, 1000);
-  }, 300);
+    var timer = setInterval(circle, 4000);
+  }, 8500);
   var count = 1;
   function circle(){
     var page = document.getElementsByClassName('class')[count];
