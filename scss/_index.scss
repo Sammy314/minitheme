@@ -217,39 +217,39 @@ html, body{
 .gif {
   .clock {
     position: relative;
-    // width: px2rem(400);
-    // height: 70%;
-    width: 200px;
-    height: 200px;
-    background: url(../img/clock1.png) no-repeat center;
-    background-size: contain;
+    width: px2rem(400);
+    height: 70%;
+    // width: 200px;
+    // height: 200px;
+    // background: url(../img/clock1.png) no-repeat center;
+    // background-size: contain;
     margin: auto;
     margin-top: px2rem(100);
-    animation: rotate 2s linear reverse infinite;
+    // animation: rotate 2s linear reverse infinite;
   }
-  .hour {
-    position: absolute;
-    top: 82px;
-    left: 95px;
-    width: 10px;
-    height: 75px;
-  }
-  .min {
-    position: absolute;
-    width: 8px;
-    height: 90px;
-    top: 53px;
-    left: 125px;
-    transform: rotate(-90deg);
-  }
-  .sec {
-    position: absolute;
-    width: 10px;
-    height: 116px;
-    transform: rotate(-45deg);
-    top: 56px;
-    left: 113px;
-  }
+  // .hour {
+  //   position: absolute;
+  //   top: 82px;
+  //   left: 95px;
+  //   width: 10px;
+  //   height: 75px;
+  // }
+  // .min {
+  //   position: absolute;
+  //   width: 8px;
+  //   height: 90px;
+  //   top: 53px;
+  //   left: 125px;
+  //   transform: rotate(-90deg);
+  // }
+  // .sec {
+  //   position: absolute;
+  //   width: 10px;
+  //   height: 116px;
+  //   transform: rotate(-45deg);
+  //   top: 56px;
+  //   left: 113px;
+  // }
   .tip {
     font-size: px2rem(30);
     color: #aa8675;
