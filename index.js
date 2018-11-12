@@ -147,9 +147,22 @@ function circle(){
         break;
   }
 }
+
+
+
 function handleClick() {
+  var musicAudio=document.getElementById("musicAudio");
+  musicAudio.src = "music.mp3";
+  musicAudio.play();
+  document.addEventListener("WeixinJSBridgeReady", function() {
+    if(typeof WeixinJSBridge == "object") {
+      WeixinJSBridge.invoke("getNetworkType", {}, function(j) {
+        musicAudio.play();
+      })
+    }
+  });
+  
   $(".lead-page").hide();
-  fn();
   setTimeout(function() {
     $(".gif").hide();
     $(".canvas-wrap").hide();
@@ -159,48 +172,18 @@ function handleClick() {
     var timer = setInterval(circle, 4000);
   }, 8500);
 }
-// // 音乐播放
-// function autoPlayMusic() {
-//   // 自动播放音乐效果，解决浏览器或者APP自动播放问题
-//   function musicInBrowserHandler() {
-//       musicPlay(true);
-//       document.body.removeEventListener('touchstart', musicInBrowserHandler);
-//   }
-//   document.body.addEventListener('touchstart', musicInBrowserHandler);
-
-//   // 自动播放音乐效果，解决微信自动播放问题
-//   function musicInWeixinHandler() {
-//       musicPlay(true);
-//       document.addEventListener("WeixinJSBridgeReady", function () {
-//           musicPlay(true);
-//       }, false);
-//       document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
-//   }
-//   document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
-// }
-// function musicPlay(isPlay) {
-//   var audio = document.getElementById('musicAudio');
-//   if (isPlay && audio.paused) {
-//       audio.play();
-//   }
-//   if (!isPlay && !audio.paused) {
-//       audio.pause();
-//   }
-// }
-// autoPlayMusic();
-
 function fn(){
   var musicAudio=document.getElementById("musicAudio");
   var music=document.getElementsByClassName("music")[0];
-  document.addEventListener('DOMContentLoaded', function() {
-    function audioAutoPlay() {
-      musicAudio.play();
-      document.addEventListener("WeixinJSBridgeReady", function() {
-        musicAudio.play();
-      }, false);
-    }
-    audioAutoPlay();
-  });
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   function audioAutoPlay() {
+  //     musicAudio.play();
+  //     document.addEventListener("WeixinJSBridgeReady", function() {
+  //       musicAudio.play();
+  //     }, false);
+  //   }
+  //   audioAutoPlay();
+  // });
   if(musicAudio.muted){
     musicAudio.muted=false; //静音
     music.style.backgroundImage="url(img/music-on.png)";
