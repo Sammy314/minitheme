@@ -144,8 +144,7 @@ html, body {
   height: 100%;
   position: relative;
   overflow: hidden;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/79-80.jpg.png',sizingMethod='scale');
-  display: none; }
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/79-80.jpg.png',sizingMethod='scale'); }
 
 .music {
   position: absolute;

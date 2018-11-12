@@ -1,5 +1,5 @@
 window.onload = function() {
-  $('.page-container').show();
+  // $('.page-container').show();
   setTimeout(function() {
     $(".gif").hide();
     $(".canvas-wrap").hide();
