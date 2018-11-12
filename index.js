@@ -1,3 +1,22 @@
+$(".page-container").append(
+  '<audio id="musicAudio" autoplay="true" loop="loop" preload="true"><source src="music.mp3" type="audio/mpeg"></audio>'
+);
+// 音乐自动播放
+function audioAutoPlay(id){
+    var audio = document.getElementById(id);
+    play = function(){
+        audio.play();
+        document.removeEventListener("touchstart",play, false);
+    };
+    audio.play();
+    // 获取微信初始化完成
+    document.addEventListener("WeixinJSBridgeReady", function () {
+        play();
+    }, false);
+    // 手机触碰屏幕
+    document.addEventListener("touchstart",play, false);
+}
+audioAutoPlay('musicAudio');
 window.onload = function() {
   // $('.page-container').show();
   setTimeout(function() {
