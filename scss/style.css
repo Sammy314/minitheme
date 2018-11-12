@@ -131,108 +131,108 @@ html, body {
   overflow-scrolling: touch;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
+@font-face {
+  font-family: "华文中宋";
+  src: url(../hwzs.ttf); }
 html, body {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  font-family: "华文中宋"; }
 
 .page-container {
-  background-image: url(../img/79-89_02.png);
-  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  background-size: 100% 100%;
   position: relative;
   overflow: hidden;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/79-80.jpg.png',sizingMethod='scale'); }
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/79-80.jpg.png',sizingMethod='scale');
+  display: none; }
 
 .music {
   position: absolute;
   right: 0.4266666667rem;
   top: 0.5546666667rem;
+  z-index: 99;
   width: 1.28rem;
   height: 1.3226666667rem;
-  background: url(../img/music-off.png) no-repeat center;
-  background-size: 100%; }
+  background: url(../img/music-on.png) no-repeat center;
+  background-size: 100%;
+  cursor: pointer;
+  animation: rotating 3s linear infinite; }
 
-@keyframes music {
+@keyframes rotating {
   0% {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
 .head {
   position: relative;
-  height: 4.6933333333rem;
-  /* background: url(img/head.png) no-repeat center; */
-  background: url(../img/time.png) no-repeat 63% 50%;
+  height: 110px;
   background-size: 85%;
-  margin-top: 30px; }
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.head-img {
+  position: relative;
+  width: 340px;
+  height: 100px;
+  background-image: url(../img/time1.png);
+  background-repeat: no-repeat;
+  background-size: 100%; }
+  .head-img img {
+    width: 100%;
+    height: 100%; }
+
+.stage-1, .stage-2, .stage-3, .stage-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 18px;
+  width: 65px;
+  height: 60px;
+  overflow: hidden; }
+  .stage-1-img, .stage-2-img, .stage-3-img, .stage-4-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0; }
+    .stage-1-img img, .stage-2-img img, .stage-3-img img, .stage-4-img img {
+      display: block;
+      width: 65px;
+      height: 60px; }
 
 .stage-1 {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 23px;
-  width: 46px;
-  height: 46px;
-  left: 72px;
-  overflow: hidden; }
-  .stage-1 .stage-1-img {
-    position: absolute; }
-    .stage-1 .stage-1-img img {
-      width: 46px;
-      height: 42px; }
+  left: 15px; }
+  .stage-1-img {
+    background-image: url(../img/b1.png); }
 
 .stage-2 {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 23px;
-  width: 46px;
-  height: 46px;
-  left: 135px;
-  overflow: hidden; }
-  .stage-2 .stage-2-img {
-    position: absolute; }
-    .stage-2 .stage-2-img img {
-      width: 46px;
-      height: 42px; }
+  left: 96px; }
+  .stage-2-img {
+    background-image: url(../img/b2.png); }
 
 .stage-3 {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 23px;
-  width: 46px;
-  height: 46px;
-  left: 196px;
-  overflow: hidden; }
-  .stage-3 .stage-3-img {
-    position: absolute;
-    top: 0; }
-    .stage-3 .stage-3-img img {
-      width: 46px;
-      height: 42px; }
+  left: 178px; }
+  .stage-3-img {
+    background-image: url(../img/b3.png); }
 
-.img-1 {
-  left: 2.8586666667rem; }
-
-.img-2 {
-  left: 5.5466666667rem; }
-
-.img-3 {
-  left: 8.1493333333rem; }
-
-.img-4 {
-  left: 10.88rem; }
+.stage-4 {
+  left: 259px; }
+  .stage-4-img {
+    background-image: url(../img/b4.png); }
 
 .body {
   text-align: center;
-  /* animation-duration: 4s;  */ }
+  height: 100%; }
 
 .title {
   animation: body 4s infinite;
   font-size: 0.9813333333rem;
-  font-family: "方正正大黑简体";
   font-weight: 900;
   padding: 0 0.8533333333rem; }
 
@@ -242,6 +242,22 @@ html, body {
 .show {
   display: block;
   text-align: center; }
+  .show.nopic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #f8b959;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 2.9866666667rem;
+    background: #d51e1d;
+    border-radius: 10px;
+    color: #fff; }
+
+.end .title {
+  font-size: 34px; }
 
 @keyframes body {
   10% {
@@ -259,21 +275,82 @@ html, body {
   line-height: 0.8533333333rem;
   letter-spacing: 0.5px;
   font-weight: 900;
-  font-family: "方正正大黑简体";
   padding: 0 0.8533333333rem; }
 
 .pic {
+  position: relative;
   height: 7.2533333333rem;
   margin: 0 1.28rem;
   margin-top: 1.28rem;
   border: 3px solid #f8b959; }
   .pic img {
-    display: inline-block;
+    display: block;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   .pic.noborder {
     border: 0;
     height: 8.5333333333rem; }
+
+.page, .gif, .bg-pic {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+.page {
+  background-color: #fff;
+  background-image: url(../img/79-89_02.png);
+  opacity: 0; }
+
+.bg-pic {
+  background-image: url(../img/bgbg.png);
+  z-index: -2;
+  position: absolute;
+  display: flex;
+  font-size: 30px;
+  color: #aa8675;
+  align-items: center;
+  justify-content: center; }
+
+.gif .clock {
+  position: relative;
+  width: 8.5333333333rem;
+  height: 70%;
+  margin: auto;
+  margin-top: 2.1333333333rem; }
+.gif .tip {
+  font-size: 0.64rem;
+  color: #aa8675;
+  letter-spacing: 3px;
+  margin-top: 0.8533333333rem; }
+.gif #year {
+  color: #a48c64;
+  font-size: 3.2426666667rem;
+  font-style: italic;
+  font-weight: 900;
+  margin-top: 5.5466666667rem; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+.canvas-wrap {
+  position: absolute;
+  top: 0;
+  z-index: -1; }
 
 .stage-1-icon {
   width: 1.92rem;

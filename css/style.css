@@ -144,7 +144,8 @@ html, body {
   height: 100%;
   position: relative;
   overflow: hidden;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/79-80.jpg.png',sizingMethod='scale'); }
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/79-80.jpg.png',sizingMethod='scale');
+  display: none; }
 
 .music {
   position: absolute;
@@ -325,33 +326,10 @@ html, body {
 
 .gif .clock {
   position: relative;
-  width: 200px;
-  height: 200px;
-  background: url(../img/clock1.png) no-repeat center;
-  background-size: contain;
+  width: 8.5333333333rem;
+  height: 70%;
   margin: auto;
-  margin-top: 2.1333333333rem;
-  animation: rotate 2s linear reverse infinite; }
-.gif .hour {
-  position: absolute;
-  top: 82px;
-  left: 95px;
-  width: 10px;
-  height: 75px; }
-.gif .min {
-  position: absolute;
-  width: 8px;
-  height: 90px;
-  top: 53px;
-  left: 125px;
-  transform: rotate(-90deg); }
-.gif .sec {
-  position: absolute;
-  width: 10px;
-  height: 116px;
-  transform: rotate(-45deg);
-  top: 56px;
-  left: 113px; }
+  margin-top: 2.1333333333rem; }
 .gif .tip {
   font-size: 0.64rem;
   color: #aa8675;
