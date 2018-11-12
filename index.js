@@ -1,4 +1,4 @@
-$(".page-container").append(
+$("body").append(
   '<audio id="musicAudio" autoplay="true" loop="loop" preload="true"><source src="music.mp3" type="audio/mpeg"></audio>'
 );
 // 音乐自动播放
