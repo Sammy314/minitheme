@@ -325,25 +325,50 @@ html, body {
 
 .gif .clock {
   position: relative;
-  width: 8.5333333333rem;
-  height: 70%;
-  background: url(../img/clock.gif) no-repeat center;
+  width: 200px;
+  height: 200px;
+  background: url(../img/clock1.png) no-repeat center;
   background-size: contain;
   margin: auto;
-  margin-top: 2.1333333333rem; }
+  margin-top: 2.1333333333rem;
+  animation: rotate 2s linear reverse infinite; }
+.gif .hour {
+  position: absolute;
+  top: 82px;
+  left: 95px;
+  width: 10px;
+  height: 75px; }
+.gif .min {
+  position: absolute;
+  width: 8px;
+  height: 90px;
+  top: 53px;
+  left: 125px;
+  transform: rotate(-90deg); }
+.gif .sec {
+  position: absolute;
+  width: 10px;
+  height: 116px;
+  transform: rotate(-45deg);
+  top: 56px;
+  left: 113px; }
 .gif .tip {
   font-size: 0.64rem;
   color: #aa8675;
   letter-spacing: 3px;
   margin-top: 0.8533333333rem; }
+.gif #year {
+  color: #a48c64;
+  font-size: 76px;
+  font-style: italic;
+  font-weight: 900;
+  margin-top: 7.68rem; }
 
 @keyframes rotate {
   0% {
-    transform: rotate(0);
-    transform-origin: bottom; }
+    transform: rotate(0); }
   100% {
-    transform: rotate(360deg);
-    transform-origin: bottom; } }
+    transform: rotate(360deg); } }
 .canvas-wrap {
   position: absolute;
   top: 0;

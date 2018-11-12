@@ -34,7 +34,13 @@
 <body>
   <div class="page-container">
     <div class="gif">
-      <div class="clock"></div>
+      <!-- <div class="clock"></div> -->
+      <div class="clock">
+        <img src="img/hour.png" class="hour">
+        <img src="img/min.png" class="min">
+        <img src="img/sec.png" class="sec">
+      </div>
+      <div id="year">2018</div>
       <div class="tip">时光隧道开启中...</div>
     </div>
     <div class="canvas-wrap">
@@ -343,5 +349,13 @@ wx.ready(function(){
   document.getElementById("musicAudio").setAttribute('src', 'music.mp3');
   document.getElementById("musicAudio").play();
 });
+var num = 2018;
+var t = setInterval(function(){
+  num--;
+  document.getElementById("year").innerText = num;
+  if (num == 1978) {
+    clearInterval(t);
+  }
+},200)
 </script>
 </html>
