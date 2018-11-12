@@ -1,4 +1,4 @@
-window.onload = function() {
+// window.onload = function() {
   setTimeout(function() {
     $(".gif").hide();
     $(".canvas-wrap").hide();
@@ -158,7 +158,7 @@ window.onload = function() {
       }
     }, 6);
   }
-}
+// }
 // // 音乐播放
 // function autoPlayMusic() {
 //   // 自动播放音乐效果，解决浏览器或者APP自动播放问题
