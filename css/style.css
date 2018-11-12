@@ -322,7 +322,8 @@ html, body {
 .lead-page {
   background-image: url(../img/bgbg.png);
   font-size: 30px;
-  color: #a48c64; }
+  color: #a48c64;
+  font-family: "华文中宋"; }
   .lead-page .lead-title {
     font-size: 50px;
     margin-top: 3.4133333333rem; }
@@ -332,9 +333,10 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
     padding: 10px;
-    border: 4px solid #f8b959;
+    border: 3px solid rgba(164, 140, 100, 0.6);
     border-radius: 5px;
-    cursor: pointer; }
+    cursor: pointer;
+    font-family: "华文中宋"; }
 
 .gif .clock {
   position: relative;
