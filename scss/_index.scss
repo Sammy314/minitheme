@@ -258,10 +258,10 @@ html, body{
   }
   #year {
     color: #a48c64;
-    font-size: 76px;
+    font-size: px2rem(152);
     font-style: italic;
     font-weight: 900;
-    margin-top: px2rem(300);
+    margin-top: px2rem(260);
   }
 }
 @keyframes rotate {
