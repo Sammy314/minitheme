@@ -144,8 +144,7 @@ html, body {
   height: 100%;
   position: relative;
   overflow: hidden;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/79-80.jpg.png',sizingMethod='scale');
-  display: none; }
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/79-80.jpg.png',sizingMethod='scale'); }
 
 .music {
   position: absolute;
@@ -330,6 +329,26 @@ html, body {
   height: 70%;
   margin: auto;
   margin-top: 2.1333333333rem; }
+.gif .hour {
+  position: absolute;
+  top: 82px;
+  left: 95px;
+  width: 10px;
+  height: 75px; }
+.gif .min {
+  position: absolute;
+  width: 8px;
+  height: 90px;
+  top: 53px;
+  left: 125px;
+  transform: rotate(-90deg); }
+.gif .sec {
+  position: absolute;
+  width: 10px;
+  height: 116px;
+  transform: rotate(-45deg);
+  top: 56px;
+  left: 113px; }
 .gif .tip {
   font-size: 0.64rem;
   color: #aa8675;

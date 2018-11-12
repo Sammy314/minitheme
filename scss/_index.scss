@@ -13,7 +13,6 @@ html, body{
   position: relative;
   overflow: hidden;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/79-80.jpg.png',sizingMethod='scale');
-  // display: none;
 }
 .music {
   position: absolute;
@@ -187,7 +186,7 @@ html, body{
     height: px2rem(400);
   }
 }
-.page, .gif, .bg-pic {
+.page, .gif, .lead-page {
   position: relative;
   top: 0;
   left: 0;
@@ -205,52 +204,35 @@ html, body{
   background-image: url(../img/79-89_02.png);
   opacity: 0;
 }
-.bg-pic {
+.lead-page {
   background-image: url(../img/bgbg.png);
-  z-index: -2;
-  position: absolute;
-  display: flex;
   font-size: 30px;
-  color: #aa8675;
-  align-items: center;
-  justify-content: center;
+  color: #a48c64;
+  .lead-title {
+    font-size: 50px;
+    margin-top: px2rem(160);
+    // margin-bottom: px2rem(80);
+  }
+  .button {
+    position: absolute;
+    bottom: px2rem(300);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border: 4px solid #f8b959;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 }
 .gif {
+  // opacity: 0;
   .clock {
     position: relative;
     width: px2rem(400);
     height: 70%;
-    // width: 200px;
-    // height: 200px;
-    // background: url(../img/clock1.png) no-repeat center;
-    // background-size: contain;
     margin: auto;
     margin-top: px2rem(100);
-    // animation: rotate 2s linear reverse infinite;
   }
-  // .hour {
-  //   position: absolute;
-  //   top: 82px;
-  //   left: 95px;
-  //   width: 10px;
-  //   height: 75px;
-  // }
-  // .min {
-  //   position: absolute;
-  //   width: 8px;
-  //   height: 90px;
-  //   top: 53px;
-  //   left: 125px;
-  //   transform: rotate(-90deg);
-  // }
-  // .sec {
-  //   position: absolute;
-  //   width: 10px;
-  //   height: 116px;
-  //   transform: rotate(-45deg);
-  //   top: 56px;
-  //   left: 113px;
-  // }
   .tip {
     font-size: px2rem(30);
     color: #aa8675;
@@ -263,14 +245,6 @@ html, body{
     font-style: italic;
     font-weight: 900;
     margin-top: px2rem(260);
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 .canvas-wrap {
