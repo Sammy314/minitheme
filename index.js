@@ -1,11 +1,11 @@
 window.onload = function() {
   setTimeout(function() {
-    $(".gif").hide();
-    $(".canvas-wrap").hide();
-    $(".page").animate({"opacity": "1"},1000);
+    // $(".gif").hide();
+    // $(".canvas-wrap").hide();
+    // $(".page").animate({"opacity": "1"},1000);
   }, 8000);
   setTimeout(function() {
-    var timer = setInterval(circle, 4000);
+    // var timer = setInterval(circle, 4000);
   }, 8500);
   var count = 1;
   function circle(){
