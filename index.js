@@ -137,20 +137,15 @@ function handleClick() {
       })
     }
   });
-  
-  // $(".lead-page").addClass("scaleDraw");
-  $(".lead-page").hide();
   // setTimeout(function() {
   //   $(".lead-page").hide();
   //   $(".page").show();
   // }, 4000);
-  
+  $(".lead-page").hide();
   setTimeout(function() {
     $(".gif").hide();
     $(".canvas-wrap").hide();
     $(".page").animate({"opacity": "1"},1000);
-  }, 8000);
-  setTimeout(function() {
     var timer = setInterval(circle, 4000);
   }, 8000);
 }
