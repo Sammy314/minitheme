@@ -122,10 +122,10 @@ function circle(){
       break;
   }
 }
-setTimeout(function() {
-  $(".load-1").hide();
-  $(".button").css("display","block");
-}, 10000);
+// setTimeout(function() {
+//   $(".load-1").hide();
+//   $(".button").css("display","block");
+// }, 10000);
 function handleClick() {
   var musicAudio=document.getElementById("musicAudio");
   musicAudio.src = "music.mp3";
@@ -138,21 +138,21 @@ function handleClick() {
     }
   });
   
-  $(".lead-page").addClass("scaleDraw");
- 
-  setTimeout(function() {
-    $(".lead-page").hide();
-    $(".page").show();
-  }, 4000);
+  // $(".lead-page").addClass("scaleDraw");
+  $(".lead-page").hide();
+  // setTimeout(function() {
+  //   $(".lead-page").hide();
+  //   $(".page").show();
+  // }, 4000);
   
   setTimeout(function() {
-    // $(".gif").hide();
-    // $(".canvas-wrap").hide();
+    $(".gif").hide();
+    $(".canvas-wrap").hide();
     $(".page").animate({"opacity": "1"},1000);
-  }, 2000);
+  }, 8000);
   setTimeout(function() {
     var timer = setInterval(circle, 4000);
-  }, 2500);
+  }, 8000);
 }
 
 

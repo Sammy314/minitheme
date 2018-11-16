@@ -191,19 +191,19 @@ html, body{
 .page {
   background-color: #fff;
   background-image: url(../img/bg.jpg);
-  display: none;
+  opacity: 0;
 }
 .lead-page {
   background-image: url(../img/bgbg.jpg);
   .hd {
-    margin-top: px2rem(300);
+    margin-top: px2rem(200);
     padding: 0 px2rem(40);
   }
   .button {
-    margin-top: px2rem(400);
+    margin-top: px2rem(360);
     padding: 0 px2rem(200);
     cursor: pointer;
-    display: none;
+    // display: none;
   }
 }
 .gif {
