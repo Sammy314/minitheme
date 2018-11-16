@@ -307,8 +307,9 @@ html, body {
     margin-top: 4.2666666667rem;
     padding: 0 0.8533333333rem; }
   .lead-page .button {
-    margin-top: 7.68rem;
+    margin-top: 5.12rem;
     padding: 0 4.2666666667rem;
+    padding-top: 1.28rem;
     cursor: pointer; }
 
 .gif .clock {
