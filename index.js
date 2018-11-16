@@ -27,124 +27,82 @@ function circle(){
       break;
     case 2:
     // 80
-      move(stage3, 60);
+      move(stage3, 58);
       move(stage4, 60);
       break;
     case 3:
     // 81
-      move(stage4, 120);
+      move(stage4, 118);
       break;
     case 4:
     // 84
-      move(stage4, 180);
+      move(stage4, 177);
       break;
     case 5:
     // 85
-      move(stage4, 240);
+      move(stage4, 236);
       break;
     case 6:
     // 1988
-      move(stage4, 300);
+      move(stage4, 295);
       break;
     case 7:
-    // 1989
-      move(stage4, 360);
+    // 1991
+      move(stage3, 117);
+      move(stage4, 354);
       break;
     case 8:
-    // 90
-      move(stage3, 120);
-      move(stage4, 420);
-      $('.page').css('background-image','url(img/80-90_02.png)');
+    // 92
+      move(stage4, 413);
       break;
     case 10:
-    // 91
-      move(stage4, 480);
+    // 94
+      move(stage4, 472);
       break;
-    case 12:
-    // 92
-      move(stage4, 540);
+    case 11:
+    // 06
+      move(stage1, 60);
+      move(stage2, 59);
+      move(stage3, 176);
+      move(stage4, 530);
       break;
     case 15:
-    // 94
-      move(stage4, 600);
-      break;
-    case 16:
-    // 97
-      move(stage4, 660);
-      break;
-    case 17:
-    // 99
-      move(stage4, 720);
+    // 08
+      move(stage4, 590);
       break;
     case 18:
-    // 00
-      move(stage1, 60);
-      move(stage2, 60);
-      move(stage3, 180);
-      move(stage4, 780);
-      $('.page').css('background-image','url(img/00-10_02.png)');
+    // 11
+      move(stage3, 236);
+      move(stage4, 649);
       break;
     case 19:
-    // 04
-      move(stage4, 840);
+    // 12
+      move(stage4, 708);
       break;
     case 20:
-    // 05
-      move(stage4, 900);
+    // 13
+      move(stage4, 767);
       break;
-    case 22:
-    // 06
-      move(stage4, 960);
+    case 21:
+    // 14
+      move(stage4, 826);
       break;
-    case 26:
-    // 07
-      move(stage4, 1020);
+    case 23:
+    // 15
+      move(stage4, 885);
+      break;
+    case 25:
+    // 16
+      move(stage4, 944);
       break;
     case 27:
-    // 08
-      move(stage4, 1080);
-      break;
-    case 30:
-    // 10
-      move(stage3, 240);
-      move(stage4, 1140);
-      break;
-    case 31:
-    // 11
-      move(stage4, 1200);
-      $('.page').css('background-image','url(img/10-18_02.png)');
-      break;
-    case 32:
-    // 12
-      move(stage4, 1260);
-      break;
-    case 34:
-    // 13
-      move(stage4, 1320);
-      break;
-    case 35:
-    // 14
-      move(stage4, 1380);
-      break;
-    case 37:
-    // 15
-      move(stage4, 1440);
-      break;
-    case 39:
-    // 16
-      move(stage4, 1500);
-      break;
-    case 41:
     // 17
-      move(stage4, 1560);
+      // move(stage4, 944);
+      $('.page .foot').css('opacity', '0');
+      clearInterval(timer);
       break;
-      case 42:
-        move(stage4, 1620);
-        $('.page .head').css('opacity', '0');
-        clearInterval(timer);
-        break;
-      default:
-        break;
+    default:
+      break;
   }
 }
 
@@ -162,15 +120,21 @@ function handleClick() {
     }
   });
   
-  $(".lead-page").hide();
+  $(".lead-page").addClass("scaleDraw");
+  
   setTimeout(function() {
-    $(".gif").hide();
-    $(".canvas-wrap").hide();
-    $(".page").animate({"opacity": "1"},1000);
-  }, 8000);
+    $(".lead-page").hide();
+    $(".page").show();
+  }, 4000);
+  
+  // setTimeout(function() {
+  //   $(".gif").hide();
+  //   $(".canvas-wrap").hide();
+  //   $(".page").animate({"opacity": "1"},1000);
+  // }, 300);
   setTimeout(function() {
     var timer = setInterval(circle, 4000);
-  }, 8500);
+  }, 4000);
 }
 function fn(){
   var musicAudio=document.getElementById("musicAudio");
