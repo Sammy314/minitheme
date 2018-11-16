@@ -172,7 +172,7 @@ html, body {
     transform: rotate(360deg); } }
 .foot {
   position: fixed;
-  bottom: 15%;
+  bottom: 8%;
   left: 50%;
   transform: translateX(-50%);
   background-size: 85%; }
