@@ -1,10 +1,27 @@
-function getStyle(obj, attr) {
-  if (window.getComputedStyle) {
-    return getComputedStyle(obj, null)[attr];
-  }else {
-    return obj.currentStyle[attr];
+// window.onload = function() {
+  function getStyle(obj, attr) {
+    if (window.getComputedStyle) {
+      return getComputedStyle(obj, null)[attr];
+    }else {
+      return obj.currentStyle[attr];
+    }
   }
-}
+  function fn(){
+    var musicAudio=document.getElementById("musicAudio");
+    var music=document.getElementsByClassName("music")[0];
+    if(musicAudio.muted){
+      musicAudio.muted=false; //静音
+      music.style.backgroundImage="url(img/music-on.png)";
+      music.style.animation="rotating 3s linear infinite";
+      musicAudio.paused;
+    }else{
+      musicAudio.muted=true;
+      music.style.backgroundImage="url(img/music-off.png)";
+      music.style.animation="rotating 0s";
+      musicAudio.play();
+    }
+  }
+// }
 function move(dom, value){
   var moveTimer = setInterval(function() {
     var top = getStyle(dom, 'backgroundPositionY');
@@ -105,9 +122,10 @@ function circle(){
       break;
   }
 }
-
-
-
+setTimeout(function() {
+  $(".load-1").hide();
+  $(".button").css("display","block");
+}, 10000);
 function handleClick() {
   var musicAudio=document.getElementById("musicAudio");
   musicAudio.src = "music.mp3";
@@ -121,44 +139,21 @@ function handleClick() {
   });
   
   $(".lead-page").addClass("scaleDraw");
-  
+ 
   setTimeout(function() {
     $(".lead-page").hide();
     $(".page").show();
   }, 4000);
   
-  // setTimeout(function() {
-  //   $(".gif").hide();
-  //   $(".canvas-wrap").hide();
-  //   $(".page").animate({"opacity": "1"},1000);
-  // }, 300);
+  setTimeout(function() {
+    // $(".gif").hide();
+    // $(".canvas-wrap").hide();
+    $(".page").animate({"opacity": "1"},1000);
+  }, 2000);
   setTimeout(function() {
     var timer = setInterval(circle, 4000);
-  }, 4000);
+  }, 2500);
 }
-function fn(){
-  var musicAudio=document.getElementById("musicAudio");
-  var music=document.getElementsByClassName("music")[0];
-  // document.addEventListener('DOMContentLoaded', function() {
-  //   function audioAutoPlay() {
-  //     musicAudio.play();
-  //     document.addEventListener("WeixinJSBridgeReady", function() {
-  //       musicAudio.play();
-  //     }, false);
-  //   }
-  //   audioAutoPlay();
-  // });
-  if(musicAudio.muted){
-    musicAudio.muted=false; //静音
-    music.style.backgroundImage="url(img/music-on.png)";
-    music.style.animation="rotating 3s linear infinite";
-    musicAudio.paused;
-  }else{
-    musicAudio.muted=true;
-    music.style.backgroundImage="url(img/music-off.png)";
-    music.style.animation="rotating 0s";
-    musicAudio.play();
-  }
-}
+
 
 

@@ -239,6 +239,7 @@ html, body {
   align-items: center;
   width: 100%;
   height: 270px;
+  transform: scale(0);
   animation: body 4s infinite;
   padding: 0 0.8533333333rem; }
 
@@ -257,22 +258,9 @@ html, body {
 
 @keyframes body {
   10% {
-    transform: rotate(360deg); }
-  30% {
-    transform: scale(1); }
-  90% {
-    opacity: 0.9; }
+    transform: scale(0); }
   100% {
-    transform: scale(1.2);
-    opacity: 0; } }
-.con {
-  font-size: 0.5973333333rem;
-  margin-top: 0.8533333333rem;
-  line-height: 0.8533333333rem;
-  letter-spacing: 0.5px;
-  font-weight: 900;
-  padding: 0 0.8533333333rem; }
-
+    transform: scale(1); } }
 .pic {
   background: url(../img/picbg.png) no-repeat center;
   background-size: 100%;
@@ -287,9 +275,6 @@ html, body {
     position: absolute;
     top: 9px;
     left: 17px; }
-  .pic.noborder {
-    border: 0;
-    height: 8.5333333333rem; }
 
 .pic1 {
   display: flex;
@@ -324,7 +309,8 @@ html, body {
   .lead-page .button {
     margin-top: 8.5333333333rem;
     padding: 0 4.2666666667rem;
-    cursor: pointer; }
+    cursor: pointer;
+    display: none; }
 
 .gif .clock {
   position: relative;
@@ -394,6 +380,39 @@ html, body {
   100% {
     transform: scale(0);
     opacity: 0; } }
+.load-1 {
+  margin-top: 8.5333333333rem; }
+
+.k-line {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px; }
+  .k-line-1 {
+    animation: k-loadingA 1.5s 0s infinite;
+    background-color: #d21e39; }
+  .k-line-2 {
+    animation: k-loadingA 1.5s .1s infinite;
+    background-color: #d21e39;
+    opacity: .9; }
+  .k-line-3 {
+    animation: k-loadingA 1.5s .2s infinite;
+    background-color: #d21e39;
+    opacity: .8; }
+  .k-line-4 {
+    animation: k-loadingA 1.5s .3s infinite;
+    background-color: #d21e39;
+    opacity: .7; }
+  .k-line-5 {
+    animation: k-loadingA 1.5s .4s infinite;
+    background-color: #d21e39;
+    opacity: .6; }
+
+@keyframes k-loadingA {
+  50% {
+    height: 35px; }
+  100% {
+    height: 15px; } }
 .stage-1-icon {
   width: 1.92rem;
   height: 1.9626666667rem;
