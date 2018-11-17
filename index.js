@@ -25,9 +25,9 @@
   }
 function move(dom, value){
   var moveTimer = setInterval(function() {
-    var top = getStyle(dom, 'backgroundPositionY');
+    var top = getStyle(dom, 'top');
     top = parseInt(top) -1;
-    dom.style.backgroundPositionY = top + 'px';
+    dom.style.top = top + 'px';
     if (top == -(value)) {
       clearInterval(moveTimer);
     }
@@ -45,82 +45,84 @@ function circle(){
       break;
     case 2:
     // 80
-      move(stage3, 58);
-      move(stage4, 60);
+      move(stage3, 60);
+      move(stage4, 61);
       break;
     case 3:
     // 81
-      move(stage4, 118);
+      move(stage4, 120);
       break;
     case 4:
     // 84
-      move(stage4, 177);
+      move(stage4, 180);
       break;
     case 5:
     // 85
-      move(stage4, 236);
+      move(stage4, 240);
       break;
     case 6:
     // 1988
-      move(stage4, 295);
+      move(stage4, 300);
       break;
     case 7:
     // 1991
-      move(stage3, 117);
-      move(stage4, 354);
+      move(stage3, 120);
+      move(stage4, 360);
       break;
     case 8:
     // 92
-      move(stage4, 413);
+      move(stage4, 420);
       break;
     case 10:
     // 94
-      move(stage4, 472);
+      move(stage4, 480);
       break;
     case 11:
     // 06
       move(stage1, 60);
-      move(stage2, 59);
-      move(stage3, 176);
-      move(stage4, 530);
+      move(stage2, 60);
+      move(stage3, 180);
+      move(stage4, 540);
       break;
     case 15:
     // 08
-      move(stage4, 590);
+      move(stage4, 600);
       break;
     case 18:
     // 11
-      move(stage3, 236);
-      move(stage4, 649);
+      move(stage3, 240);
+      move(stage4, 660);
       break;
     case 19:
     // 12
-      move(stage4, 708);
+      move(stage4, 720);
       break;
     case 20:
     // 13
-      move(stage4, 767);
+      move(stage4, 780);
       break;
     case 21:
     // 14
-      move(stage4, 826);
+      move(stage4, 840);
       break;
     case 23:
     // 15
-      move(stage4, 885);
+      move(stage4, 900);
       break;
     case 25:
     // 16
-      move(stage4, 944);
+      move(stage4, 960);
       break;
     case 27:
     // 17
-      // move(stage4, 944);
       $('.page .foot').css('opacity', '0');
       break;
-    case 28: 
+    case 28:
+      // 17
+      break;
+    case 29: 
       $(".star").hide();
-      $(".page").css("background-image", "url(img/endbg.jpg)");
+      $(".page-bg1").css("z-index", "2");
       clearInterval(timer);
       break;
     default:
@@ -148,27 +150,7 @@ $(".button").on("click", function() {
     $(".canvas-wrap").hide();
     $(".page").animate({"opacity": "1"},1000);
     var timer = setInterval(circle, 5000);
-  }, 3035);
+  }, 3015);
 })
-// function handleClick() {
-//   var musicAudio=document.getElementById("musicAudio");
-//   musicAudio.src = "music.mp3";
-//   musicAudio.play();
-//   document.addEventListener("WeixinJSBridgeReady", function() {
-//     if(typeof WeixinJSBridge == "object") {
-//       WeixinJSBridge.invoke("getNetworkType", {}, function(j) {
-//         musicAudio.play();
-//       })
-//     }
-//   });
-//   $(".lead-page").hide();
-//   setTimeout(function() {
-//     $(".gif").hide();
-//     $(".canvas-wrap").hide();
-//     $(".page").animate({"opacity": "1"},1000);
-//     var timer = setInterval(circle, 4000);
-//   }, 8000);
-// }
-
 
 

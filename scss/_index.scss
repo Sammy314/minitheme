@@ -66,43 +66,36 @@ html, body{
   width: 65px;
   height: 60px;
   overflow: hidden;
-  &-img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-x: 0;
-    background-position-y: 0;
-    img {
-      display: block;
-      width: 65px;
-      height: 60px;
-    }
+  img {
+    display: block;
+    width: 65px;
+    height: 60px;
+    position: absolute;
+    top: 0;
   }
 }
 .stage-1 {
   left: 15px;
-  &-img {
-    background-image: url(../img/b1.png);
+  img {
+    height: 120px;
   }
 }
 .stage-2 {
   left: 96px;
-  &-img {
-    background-image: url(../img/b2.png);
+  img {
+    height: 120px;
   }
 }
 .stage-3 {
   left: 178px;
-  &-img {
-    background-image: url(../img/b3.png);
+  img {
+    height: 300px;
   }
 }
 .stage-4 {
   left: 262px;
-  &-img {
-    background-image: url(../img/b4.png);
+ img {
+    height: 1020px;
   }
 }
 .body {
@@ -127,9 +120,6 @@ html, body{
   .pic {
     background: none;
     height: px2rem(540);
-    &.pic-400 {
-      height: px2rem(800);
-    }
   }
 }
 .tohigh {
@@ -178,6 +168,8 @@ html, body{
   }
 }
 .pic1 {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -202,8 +194,16 @@ html, body{
   background-image: url(../img/bgbg.jpg);
   opacity: 0;
 }
+.page-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
 .lead-page {
-  background-image: url(../img/leadbg1.jpg);
   .button {
     position: fixed;
     bottom: 30%;
