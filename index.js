@@ -116,6 +116,10 @@ function circle(){
     // 17
       // move(stage4, 944);
       $('.page .foot').css('opacity', '0');
+      break;
+    case 28: 
+      $(".star").hide();
+      $(".page").css("background-image", "url(img/endbg.jpg)");
       clearInterval(timer);
       break;
     default:
@@ -139,7 +143,7 @@ $(".lead-page").on("click", function() {
     $(".canvas-wrap").hide();
     $(".page").animate({"opacity": "1"},1000);
     var timer = setInterval(circle, 4000);
-  }, 8000);
+  }, 10000);
 })
 // function handleClick() {
 //   var musicAudio=document.getElementById("musicAudio");
