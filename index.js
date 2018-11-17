@@ -132,7 +132,7 @@ function circle(){
 setTimeout(function() {
   $(".button").show();
   $(".load-1").hide();
-}, 8000);
+}, 10000);
 $(".button").on("click", function() {
   var musicAudio=document.getElementById("musicAudio");
   musicAudio.src = "music.mp3";
