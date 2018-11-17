@@ -1,7 +1,6 @@
-window.onload = function() {
-  $(".button").show();
-  $(".load-1").hide();
-}
+// window.onload = function() {
+  
+// }
   function getStyle(obj, attr) {
     if (window.getComputedStyle) {
       return getComputedStyle(obj, null)[attr];
@@ -128,6 +127,10 @@ function circle(){
       break;
   }
 }
+setTimeout(function() {
+  $(".button").show();
+  $(".load-1").hide();
+}, 10000);
 $(".button").on("click", function() {
   var musicAudio=document.getElementById("musicAudio");
   musicAudio.src = "music.mp3";
