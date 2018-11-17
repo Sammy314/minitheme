@@ -142,7 +142,7 @@ $(".lead-page").on("click", function() {
     $(".gif").hide();
     $(".canvas-wrap").hide();
     $(".page").animate({"opacity": "1"},1000);
-    var timer = setInterval(circle, 4000);
+    var timer = setInterval(circle, 5000);
   }, 10000);
 })
 // function handleClick() {

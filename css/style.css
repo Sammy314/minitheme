@@ -353,7 +353,14 @@ html, body {
   top: 0;
   z-index: -1; }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 380px) {
+  .pic {
+    zoom: 0.9; }
+
+  .foot {
+    bottom: 15%;
+    zoom: 0.8; } }
+@media only screen and (max-width: 350px) {
   .pic {
     zoom: 0.9; }
 
