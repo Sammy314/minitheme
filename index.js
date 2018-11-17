@@ -148,7 +148,7 @@ $(".button").on("click", function() {
     $(".canvas-wrap").hide();
     $(".page").animate({"opacity": "1"},1000);
     var timer = setInterval(circle, 5000);
-  }, 9000);
+  }, 3035);
 })
 // function handleClick() {
 //   var musicAudio=document.getElementById("musicAudio");
