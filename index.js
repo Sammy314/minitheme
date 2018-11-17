@@ -132,7 +132,7 @@ function circle(){
 setTimeout(function() {
   $(".button").show();
   $(".load-1").hide();
-}, 10000);
+}, 8000);
 $(".button").on("click", function() {
   var musicAudio=document.getElementById("musicAudio");
   musicAudio.src = "music.mp3";
@@ -150,7 +150,7 @@ $(".button").on("click", function() {
     $(".canvas-wrap").hide();
     $(".page").animate({"opacity": "1"},1000);
     var timer = setInterval(circle, 5000);
-  }, 3015);
+  }, 3000);
 })
 
 
