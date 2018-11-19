@@ -204,15 +204,11 @@ html, body {
   left: 15px; }
   .stage-1 img {
     height: 120px; }
-  .stage-1-img {
-    background-image: url(../img/b1.png); }
 
 .stage-2 {
   left: 99px; }
   .stage-2 img {
     height: 120px; }
-  .stage-2-img {
-    background-image: url(../img/b2.png); }
 
 .stage-3 {
   left: 180px; }
