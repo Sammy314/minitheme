@@ -178,7 +178,6 @@ html, body {
   position: relative;
   width: 340px;
   height: 100px;
-  background-image: url(../img/time.png);
   background-repeat: no-repeat;
   background-size: 100%; }
   .foot-img img {
@@ -190,38 +189,40 @@ html, body {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 20px;
+  top: 23px;
   width: 65px;
   height: 60px;
   overflow: hidden; }
-  .stage-1-img, .stage-2-img, .stage-3-img, .stage-4-img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-x: 0;
-    background-position-y: 0; }
+  .stage-1 img, .stage-2 img, .stage-3 img, .stage-4 img {
+    display: block;
+    width: 65px;
+    height: 60px;
+    position: absolute;
+    top: 0; }
 
 .stage-1 {
   left: 15px; }
+  .stage-1 img {
+    height: 120px; }
   .stage-1-img {
     background-image: url(../img/b1.png); }
 
 .stage-2 {
   left: 99px; }
+  .stage-2 img {
+    height: 120px; }
   .stage-2-img {
     background-image: url(../img/b2.png); }
 
 .stage-3 {
   left: 180px; }
-  .stage-3-img {
-    background-image: url(../img/b3.png); }
+  .stage-3 img {
+    height: 300px; }
 
 .stage-4 {
   left: 260px; }
-  .stage-4-img {
-    background-image: url(../img/b4.png); }
+  .stage-4 img {
+    height: 1020px; }
 
 .body {
   height: 100%; }
@@ -384,7 +385,7 @@ html, body {
     zoom: 0.9; }
 
   .foot {
-    bottom: 15%;
+    bottom: 10%;
     zoom: 0.8; } }
 @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
   .foot {
@@ -444,6 +445,13 @@ html, body {
     height: 45px; }
   100% {
     height: 25px; } }
+.time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
 .stage-1-icon {
   width: 1.92rem;
   height: 1.9626666667rem;

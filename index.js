@@ -23,26 +23,26 @@
       musicAudio.play();
     }
   }
-// function move(dom, value){
-//   var moveTimer = setInterval(function() {
-//     var top = getStyle(dom, 'top');
-//     top = parseInt(top) -1;
-//     dom.style.top = top + 'px';
-//     if (top == -(value)) {
-//       clearInterval(moveTimer);
-//     }
-//   }, 6);
-// }
 function move(dom, value){
   var moveTimer = setInterval(function() {
-    var top = getStyle(dom, 'backgroundPositionY');
+    var top = getStyle(dom, 'top');
     top = parseInt(top) -1;
-    dom.style.backgroundPositionY = top + 'px';
+    dom.style.top = top + 'px';
     if (top == -(value)) {
       clearInterval(moveTimer);
     }
   }, 6);
 }
+// function move(dom, value){
+//   var moveTimer = setInterval(function() {
+//     var top = getStyle(dom, 'backgroundPositionY');
+//     top = parseInt(top) -1;
+//     dom.style.backgroundPositionY = top + 'px';
+//     if (top == -(value)) {
+//       clearInterval(moveTimer);
+//     }
+//   }, 6);
+// }
 setTimeout(function() {
   $(".button").show();
   $(".load-1").hide();
@@ -78,73 +78,73 @@ function circle(){
       break;
     case 2:
     // 80
-      move(stage3, 58);
-      move(stage4, 59);
+      move(stage3, 60);
+      move(stage4, 60);
       break;
     case 3:
     // 81
-      move(stage4, 118);
+      move(stage4, 120);
       break;
     case 4:
     // 84
-      move(stage4, 176);
+      move(stage4, 180);
       break;
     case 5:
     // 85
-      move(stage4, 236);
+      move(stage4, 240);
       break;
     case 6:
     // 1988
-      move(stage4, 296);
+      move(stage4, 300);
       break;
     case 7:
     // 1991
-      move(stage3, 118);
-      move(stage4, 354);
+      move(stage3, 120);
+      move(stage4, 360);
       break;
     case 8:
     // 92
-      move(stage4, 412);
+      move(stage4, 420);
       break;
     case 10:
     // 94
-      move(stage4, 472);
+      move(stage4, 480);
       break;
     case 11:
     // 06
-      move(stage1, 59);
-      move(stage2, 59);
-      move(stage3, 177);
-      move(stage4, 530);
+      move(stage1, 60);
+      move(stage2, 60);
+      move(stage3, 180);
+      move(stage4, 540);
       break;
     case 15:
     // 08
-      move(stage4, 590);
+      move(stage4, 600);
       break;
     case 18:
     // 11
-      move(stage3, 236);
-      move(stage4, 649);
+      move(stage3, 240);
+      move(stage4, 660);
       break;
     case 19:
     // 12
-      move(stage4, 708);
+      move(stage4, 720);
       break;
     case 20:
     // 13
-      move(stage4, 767);
+      move(stage4, 780);
       break;
     case 21:
     // 14
-      move(stage4, 826);
+      move(stage4, 840);
       break;
     case 23:
     // 15
-      move(stage4, 884);
+      move(stage4, 900);
       break;
     case 25:
     // 16
-      move(stage4, 944);
+      move(stage4, 960);
       break;
     case 27:
     // 17
@@ -168,6 +168,107 @@ function circle(){
       break;
   }
 }
+// function circle(){
+//   var page = document.getElementsByClassName('class')[count];
+//   $('.body').children().eq(count).addClass("show").siblings().removeClass('show');
+//   count++;
+  
+//   switch (count) {
+//     case 1:
+//     // 78
+//       break;
+//     case 2:
+//     // 80
+//       move(stage3, 58);
+//       move(stage4, 59);
+//       break;
+//     case 3:
+//     // 81
+//       move(stage4, 118);
+//       break;
+//     case 4:
+//     // 84
+//       move(stage4, 176);
+//       break;
+//     case 5:
+//     // 85
+//       move(stage4, 236);
+//       break;
+//     case 6:
+//     // 1988
+//       move(stage4, 296);
+//       break;
+//     case 7:
+//     // 1991
+//       move(stage3, 118);
+//       move(stage4, 354);
+//       break;
+//     case 8:
+//     // 92
+//       move(stage4, 412);
+//       break;
+//     case 10:
+//     // 94
+//       move(stage4, 472);
+//       break;
+//     case 11:
+//     // 06
+//       move(stage1, 59);
+//       move(stage2, 59);
+//       move(stage3, 177);
+//       move(stage4, 530);
+//       break;
+//     case 15:
+//     // 08
+//       move(stage4, 590);
+//       break;
+//     case 18:
+//     // 11
+//       move(stage3, 236);
+//       move(stage4, 649);
+//       break;
+//     case 19:
+//     // 12
+//       move(stage4, 708);
+//       break;
+//     case 20:
+//     // 13
+//       move(stage4, 767);
+//       break;
+//     case 21:
+//     // 14
+//       move(stage4, 826);
+//       break;
+//     case 23:
+//     // 15
+//       move(stage4, 884);
+//       break;
+//     case 25:
+//     // 16
+//       move(stage4, 944);
+//       break;
+//     case 27:
+//     // 17
+//       $(".page .foot").css("opacity", "0");
+//       $(".img-1").css("animation", "toleft 1s 0.5s linear 1 forwards");
+//       $(".img-2").css("animation", "toleft 1s 1s linear 1 forwards");
+//       $(".img-3").css("animation", "toleft 1s 1.5s linear 1 forwards");
+//       break;
+//     case 28:
+//       // 17
+//       $(".img-1").css("animation", "toleft 1s 0.5s linear 1 forwards");
+//       $(".img-2").css("animation", "toleft 1s 1s linear 1 forwards");
+//       $(".img-3").css("animation", "toleft 1s 1.5s linear 1 forwards");
+//       break;
+//     case 29: 
+//       $(".star").hide();
+//       $(".page-bg1").css("z-index", "2");
+//       clearInterval(timer);
+//       break;
+//     default:
+//       break;
+//   }
+// }
 
 
 
