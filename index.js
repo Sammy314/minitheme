@@ -33,6 +33,29 @@ function move(dom, value){
     }
   }, 6);
 }
+setTimeout(function() {
+  $(".button").show();
+  $(".load-1").hide();
+}, 10000);
+$(".button").on("click", function() {
+  var musicAudio=document.getElementById("musicAudio");
+  musicAudio.src = "music.mp3";
+  musicAudio.play();
+  document.addEventListener("WeixinJSBridgeReady", function() {
+    if(typeof WeixinJSBridge == "object") {
+      WeixinJSBridge.invoke("getNetworkType", {}, function(j) {
+        musicAudio.play();
+      })
+    }
+  });
+  $(".lead-page").hide();
+  setTimeout(function() {
+    $(".gif").hide();
+    $(".canvas-wrap").hide();
+    $(".page").animate({"opacity": "1"},1000);
+    var timer = setInterval(circle, 5000);
+  }, 3000);
+})
 var count = 1;
 function circle(){
   var page = document.getElementsByClassName('class')[count];
@@ -135,28 +158,6 @@ function circle(){
       break;
   }
 }
-setTimeout(function() {
-  $(".button").show();
-  $(".load-1").hide();
-}, 8000);
-$(".button").on("click", function() {
-  var musicAudio=document.getElementById("musicAudio");
-  musicAudio.src = "music.mp3";
-  musicAudio.play();
-  document.addEventListener("WeixinJSBridgeReady", function() {
-    if(typeof WeixinJSBridge == "object") {
-      WeixinJSBridge.invoke("getNetworkType", {}, function(j) {
-        musicAudio.play();
-      })
-    }
-  });
-  $(".lead-page").hide();
-  setTimeout(function() {
-    $(".gif").hide();
-    $(".canvas-wrap").hide();
-    $(".page").animate({"opacity": "1"},1000);
-    var timer = setInterval(circle, 5000);
-  }, 3000);
-})
+
 
 
