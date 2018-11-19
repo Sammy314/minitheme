@@ -81,13 +81,13 @@ html, body{
   }
 }
 .stage-2 {
-  left: 96px;
+  left: 99px;
   img {
     height: 120px;
   }
 }
 .stage-3 {
-  left: 178px;
+  left: 180px;
   img {
     height: 300px;
   }
@@ -222,7 +222,8 @@ html, body{
 .page {
   background-color: #fff;
   background-image: url(../img/bgbg.jpg);
-  opacity: 0;
+  // opacity: 0;
+  display: none;
 }
 .page-bg {
   position: absolute;
@@ -236,7 +237,7 @@ html, body{
 .lead-page {
   .button {
     position: fixed;
-    bottom: 30%;
+    bottom: 20%;
     padding: 0 px2rem(200);
     cursor: pointer;
     display: none;
@@ -250,7 +251,7 @@ html, body{
   }
   .load-1 {
     position: fixed;
-    bottom: 30%;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
   }

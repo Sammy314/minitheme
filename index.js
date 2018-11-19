@@ -52,7 +52,8 @@ $(".button").on("click", function() {
   setTimeout(function() {
     $(".gif").hide();
     $(".canvas-wrap").hide();
-    $(".page").animate({"opacity": "1"},1000);
+    // $(".page").animate({"opacity": "1"},0);
+    $(".page").show();
     var timer = setInterval(circle, 5000);
   }, 3000);
 })
