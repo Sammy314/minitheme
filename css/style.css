@@ -194,32 +194,34 @@ html, body {
   width: 65px;
   height: 60px;
   overflow: hidden; }
-  .stage-1 img, .stage-2 img, .stage-3 img, .stage-4 img {
-    display: block;
-    width: 65px;
-    height: 60px;
-    position: absolute;
-    top: 0; }
+  .stage-1-img, .stage-2-img, .stage-3-img, .stage-4-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0; }
 
 .stage-1 {
   left: 15px; }
-  .stage-1 img {
-    height: 120px; }
+  .stage-1-img {
+    background-image: url(../img/b1.png); }
 
 .stage-2 {
   left: 99px; }
-  .stage-2 img {
-    height: 120px; }
+  .stage-2-img {
+    background-image: url(../img/b2.png); }
 
 .stage-3 {
   left: 180px; }
-  .stage-3 img {
-    height: 300px; }
+  .stage-3-img {
+    background-image: url(../img/b3.png); }
 
 .stage-4 {
-  left: 262px; }
-  .stage-4 img {
-    height: 1020px; }
+  left: 260px; }
+  .stage-4-img {
+    background-image: url(../img/b4.png); }
 
 .body {
   height: 100%; }

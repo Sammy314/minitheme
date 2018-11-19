@@ -66,37 +66,58 @@ html, body{
   width: 65px;
   height: 60px;
   overflow: hidden;
-  img {
-    display: block;
-    width: 65px;
-    height: 60px;
-    position: absolute;
-    top: 0;
+  // img {
+  //   display: block;
+  //   width: 65px;
+  //   height: 60px;
+  //   position: absolute;
+  //   top: 0;
+  // }
+  &-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
   }
 }
 .stage-1 {
   left: 15px;
-  img {
-    height: 120px;
+  // img {
+  //   height: 120px;
+  // }
+  &-img {
+    background-image: url(../img/b1.png);
   }
 }
 .stage-2 {
   left: 99px;
-  img {
-    height: 120px;
+  // img {
+  //   height: 120px;
+  // }
+  &-img {
+    background-image: url(../img/b2.png);
   }
 }
 .stage-3 {
   left: 180px;
-  img {
-    height: 300px;
+  // img {
+  //   height: 300px;
+  // }
+  &-img {
+    background-image: url(../img/b3.png);
   }
 }
 .stage-4 {
-  left: 262px;
- img {
-    height: 1020px;
-  }
+  left: 260px;
+//  img {
+//     height: 1020px;
+//   }
+&-img {
+  background-image: url(../img/b4.png);
+}
 }
 .body {
   height: 100%;
@@ -222,7 +243,6 @@ html, body{
 .page {
   background-color: #fff;
   background-image: url(../img/bgbg.jpg);
-  // opacity: 0;
   display: none;
 }
 .page-bg {
