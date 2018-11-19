@@ -196,7 +196,6 @@ html, body {
   .stage-1 img, .stage-2 img, .stage-3 img, .stage-4 img {
     display: block;
     width: 65px;
-    height: 60px;
     position: absolute;
     top: 0; }
 
