@@ -239,7 +239,25 @@ html, body {
 .noborder .pic {
   background: none;
   height: 11.52rem; }
+.noborder .pic-400 {
+  height: auto; }
+  .noborder .pic-400 img {
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    position: relative;
+    height: 40px;
+    width: 100%;
+    top: 0;
+    left: -120%; }
 
+@keyframes toleft {
+  0% {
+    left: -120%; }
+  50% {
+    left: -60%; }
+  100% {
+    left: 0%; } }
 .tohigh .title {
   padding-top: 2.56rem;
   padding-bottom: 0; }
@@ -366,6 +384,9 @@ html, body {
   .foot {
     bottom: 15%;
     zoom: 0.8; } }
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+  .foot {
+    zoom: 0.9; } }
 @media only screen and (max-width: 350px) {
   .pic {
     zoom: 0.9; }

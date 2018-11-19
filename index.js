@@ -115,10 +115,16 @@ function circle(){
       break;
     case 27:
     // 17
-      $('.page .foot').css('opacity', '0');
+      $(".page .foot").css("opacity", "0");
+      $(".img-1").css("animation", "toleft 1s 0.5s linear 1 forwards");
+      $(".img-2").css("animation", "toleft 1s 1s linear 1 forwards");
+      $(".img-3").css("animation", "toleft 1s 1.5s linear 1 forwards");
       break;
     case 28:
       // 17
+      $(".img-1").css("animation", "toleft 1s 0.5s linear 1 forwards");
+      $(".img-2").css("animation", "toleft 1s 1s linear 1 forwards");
+      $(".img-3").css("animation", "toleft 1s 1.5s linear 1 forwards");
       break;
     case 29: 
       $(".star").hide();
@@ -132,7 +138,7 @@ function circle(){
 setTimeout(function() {
   $(".button").show();
   $(".load-1").hide();
-}, 10000);
+}, 8000);
 $(".button").on("click", function() {
   var musicAudio=document.getElementById("musicAudio");
   musicAudio.src = "music.mp3";

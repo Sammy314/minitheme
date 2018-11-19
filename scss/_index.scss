@@ -118,6 +118,39 @@ html, body{
     background: none;
     height: px2rem(540);
   }
+  .pic-400 {
+    height: auto;
+    img {
+      display: inline-block;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      position: relative;
+      height: 40px;
+      width: 100%;
+      top: 0;
+      left: -120%;
+    }
+    // .img-1 {
+    //   animation: toleft 1s 0.5s linear 1 forwards;
+    // }
+    // .img-2 {
+    //   animation: toleft 1s 1s linear 1 forwards;
+    // }
+    // .img-3 {
+    //   animation: toleft 1s 1.5s linear 1 forwards;
+    // }
+  }
+}
+@keyframes toleft {
+  0% {
+    left: -120%;
+  }
+  50% {
+    left: -60%;
+  }
+  100% {
+    left: 0%;
+  }
 }
 .tohigh {
   .title {
@@ -269,6 +302,15 @@ html, body{
     zoom: 0.8;
   }
 }
+//iphone8 plus
+@media only screen 
+  and (device-width : 414px) 
+  and (device-height : 736px) 
+  and (-webkit-device-pixel-ratio : 3) {
+  .foot {
+    zoom: 0.9;
+  }
+}
 @media only screen and (max-width: 350px) {
   .pic {
     zoom: 0.9;
@@ -283,6 +325,7 @@ html, body{
     bottom: 20%;
   }
 }
+
 .star {
   position: absolute;
   top: -300px;
