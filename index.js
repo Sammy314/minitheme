@@ -1,13 +1,6 @@
 // window.onload = function() {
   
 // }
-  // function getStyle(obj, attr) {
-  //   if (window.getComputedStyle) {
-  //     return getComputedStyle(obj, null)[attr];
-  //   }else {
-  //     return obj.currentStyle[attr];
-  //   }
-  // }
   function fn(){
     var musicAudio=document.getElementById("musicAudio");
     var music=document.getElementsByClassName("music")[0];
@@ -23,17 +16,25 @@
       musicAudio.play();
     }
   }
-function move(dom, value){
-  var moveTimer = setInterval(function() {
-    var top = dom.offsetTop;
-    console.log(top);
-    top = parseInt(top) - 1;
-    dom.style.top = top + 'px';
-    if (top == -(value)) {
-      clearInterval(moveTimer);
+  function getStyle(obj, attr) {
+    if (window.getComputedStyle) {
+      return getComputedStyle(obj, null)[attr];
+    }else {
+      return obj.currentStyle[attr];
     }
-  }, 6);
-}
+  }
+  function move(dom, value){
+    var moveTimer = setInterval(function() {
+      var top = getStyle(dom, 'top');
+      top = parseInt(top) -1;
+      dom.style.top = top + 'px';
+      console.log(top);
+      console.log(dom.style.top, '-----');
+      if (top == -(value)) {
+        clearInterval(moveTimer);
+      }
+    }, 6);
+  }
 // function move(dom, value){
 //   var moveTimer = setInterval(function() {
 //     var top = getStyle(dom, 'backgroundPositionY');
@@ -47,7 +48,7 @@ function move(dom, value){
 setTimeout(function() {
   $(".button").show();
   $(".load-1").hide();
-}, 10000);
+}, 60000);
 $(".button").on("click", function() {
   var musicAudio=document.getElementById("musicAudio");
   musicAudio.src = "music.mp3";
