@@ -28,8 +28,6 @@
       var top = getStyle(dom, 'top');
       top = parseInt(top) -1;
       dom.style.top = top + 'px';
-      console.log(top);
-      console.log(dom.style.top, '-----');
       if (top == -(value)) {
         clearInterval(moveTimer);
       }
