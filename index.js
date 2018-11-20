@@ -1,13 +1,13 @@
 // window.onload = function() {
   
 // }
-  function getStyle(obj, attr) {
-    if (window.getComputedStyle) {
-      return getComputedStyle(obj, null)[attr];
-    }else {
-      return obj.currentStyle[attr];
-    }
-  }
+  // function getStyle(obj, attr) {
+  //   if (window.getComputedStyle) {
+  //     return getComputedStyle(obj, null)[attr];
+  //   }else {
+  //     return obj.currentStyle[attr];
+  //   }
+  // }
   function fn(){
     var musicAudio=document.getElementById("musicAudio");
     var music=document.getElementsByClassName("music")[0];
@@ -25,8 +25,9 @@
   }
 function move(dom, value){
   var moveTimer = setInterval(function() {
-    var top = getStyle(dom, 'top');
-    top = parseInt(top) -1;
+    var top = dom.offsetTop;
+    console.log(top);
+    top = parseInt(top) - 1;
     dom.style.top = top + 'px';
     if (top == -(value)) {
       clearInterval(moveTimer);
