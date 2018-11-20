@@ -46,7 +46,7 @@
 setTimeout(function() {
   $(".button").show();
   $(".load-1").hide();
-}, 60000);
+}, 10000);
 $(".button").on("click", function() {
   var musicAudio=document.getElementById("musicAudio");
   musicAudio.src = "music.mp3";
