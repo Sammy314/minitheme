@@ -27,9 +27,6 @@ html, body{
     left: 0;
   }
 }
-.music-hide {
-  display: none;
-}
 @keyframes rotating {
   0% {
     transform: rotate(0deg);
@@ -49,7 +46,6 @@ html, body{
   position: relative;
   width: 340px;
   height: 100px;
-  // background-image: url(../img/time.png);
   background-repeat: no-repeat;
   background-size: 100%;
   img {
@@ -69,55 +65,33 @@ html, body{
   img {
     display: block;
     width: 65px;
-    // height: 60px;
     position: absolute;
     top: 0;
   }
-  // &-img {
-  //   position: relative;
-  //   width: 100%;
-  //   height: 100%;
-  //   background-size: 100%;
-  //   background-repeat: no-repeat;
-  //   background-position-x: 0;
-  //   background-position-y: 0;
-  // }
 }
 .stage-1 {
   left: 15px;
   img {
     height: 120px;
   }
-  // &-img {
-  //   background-image: url(../img/b1.png);
-  // }
 }
 .stage-2 {
   left: 99px;
   img {
     height: 120px;
   }
-  // &-img {
-  //   background-image: url(../img/b2.png);
-  // }
 }
 .stage-3 {
   left: 180px;
   img {
     height: 300px;
   }
-  // &-img {
-  //   background-image: url(../img/b3.png);
-  // }
 }
 .stage-4 {
   left: 260px;
   img {
     height: 1020px;
   }
-  // &-img {
-  //   background-image: url(../img/b4.png);
-  // }
 }
 .body {
   height: 100%;
@@ -151,15 +125,6 @@ html, body{
       top: 0;
       left: -120%;
     }
-    // .img-1 {
-    //   animation: toleft 1s 0.5s linear 1 forwards;
-    // }
-    // .img-2 {
-    //   animation: toleft 1s 1s linear 1 forwards;
-    // }
-    // .img-3 {
-    //   animation: toleft 1s 1.5s linear 1 forwards;
-    // }
   }
 }
 @keyframes toleft {
@@ -294,7 +259,6 @@ html, body{
   }
 }
 .gif {
-  // opacity: 0;
   .clock {
     position: relative;
     width: px2rem(400);
