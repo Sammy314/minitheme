@@ -26,8 +26,8 @@
 function move(dom, value){
   var moveTimer = setInterval(function() {
     var top = dom.offsetTop;
-    // console.log(top);
-    top = parseInt(top) -1;
+    console.log(top);
+    top = parseInt(top) - 1;
     dom.style.top = top + 'px';
     if (top == -(value)) {
       clearInterval(moveTimer);
