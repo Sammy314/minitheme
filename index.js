@@ -18,7 +18,8 @@
   }
   function getStyle(obj, attr) {
     if (window.getComputedStyle) {
-      return getComputedStyle(obj, null)[attr];
+      console.info()
+      return getComputedStyle(obj, null).getPropertyValue(attr);
     }else {
       return obj.currentStyle[attr];
     }
@@ -26,6 +27,7 @@
   function move(dom, value){
     var moveTimer = setInterval(function() {
       var top = getStyle(dom, 'top');
+      // var top = $('stage3').offset.top;
       top = parseInt(top) -1;
       dom.style.top = top + 'px';
       if (top == -(value)) {
