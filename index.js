@@ -47,7 +47,7 @@ $(".button").on("click", function() {
     $(".gif").hide();
     $(".canvas-wrap").hide();
     $(".page").show();
-    timer = setInterval(circle, 500);
+    timer = setInterval(circle, 5000);
   }, 3000);
 })
 var count = 1;
