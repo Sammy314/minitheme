@@ -16,21 +16,21 @@
       musicAudio.play();
     }
   }
-  function move(dom, value){
-    var moveTimer = setInterval(function() {
-      // var top = $(dom).css("top");
-      var top = parseInt(document.getElementById(dom.substr(1)).style.top);
-      top = parseInt(top) -1;
-      $(dom).css("top",top);
-      if (top == -(value)) {
-        clearInterval(moveTimer);
-      }
-    }, 6);
-  }
+  // function move(dom, value){
+  //   var moveTimer = setInterval(function() {
+  //     // var top = $(dom).css("top");
+  //     var top = parseInt(document.getElementById(dom.substr(1)).style.top);
+  //     top = parseInt(top) -1;
+  //     $(dom).css("top",top);
+  //     if (top == -(value)) {
+  //       clearInterval(moveTimer);
+  //     }
+  //   }, 6);
+  // }
 setTimeout(function() {
   $(".button").show();
   $(".load-1").hide();
-}, 10000);
+}, 1000);
 var timer = null;
 $(".button").on("click", function() {
   var musicAudio=document.getElementById("musicAudio");
@@ -63,73 +63,95 @@ function circle(){
       break;
     case 2:
     // 80
-      move('#stage3', 60);
-      setTimeout(function() {move('#stage4', 60);}, 0);
+      // move('#stage3', 60);
+      // setTimeout(function() {move('#stage4', 60);}, 0);
+      $("#stage3").animate({top:"-60px"});
+      $("#stage4").animate({top:"-60px"});
       break;
     case 3:
     // 81
-      move('#stage4', 120);
+      // move('#stage4', 120);
+      $("#stage4").animate({top:"-120px"});
       break;
     case 4:
     // 84
-      move('#stage4', 180);
+      // move('#stage4', 180);
+      $("#stage4").animate({top:"-180px"});
       break;
     case 5:
     // 85
-      move('#stage4', 240);
+      // move('#stage4', 240);
+      $("#stage4").animate({top:"-240px"});
       break;
     case 6:
     // 1988
-      move('#stage4', 300);
+      // move('#stage4', 300);
+      $("#stage4").animate({top:"-300px"});
       break;
     case 7:
     // 1991
-      move('#stage3', 120);
-      setTimeout(function() {move('#stage4', 360);}, 0);
+      // move('#stage3', 120);
+      // setTimeout(function() {move('#stage4', 360);}, 0);
+      $("#stage3").animate({top:"-120px"});
+      $("#stage4").animate({top:"-360px"});
       break;
     case 8:
     // 92
-      move('#stage4', 420);
+      // move('#stage4', 420);
+      $("#stage4").animate({top:"-420px"});
       break;
     case 10:
     // 94
-      move('#stage4', 480);
+      // move('#stage4', 480);
+      $("#stage4").animate({top:"-480px"});
       break;
     case 11:
     // 06
-      move('#stage1', 60);
-      setTimeout(function() {move('#stage2', 60);}, 0);
-      setTimeout(function() {move('#stage3', 180);}, 1);
-      setTimeout(function() {move('#stage4', 540);}, 2);
+      // move('#stage1', 60);
+      // setTimeout(function() {move('#stage2', 60);}, 0);
+      // setTimeout(function() {move('#stage3', 180);}, 1);
+      // setTimeout(function() {move('#stage4', 540);}, 2);
+      $("#stage1").animate({top:"-60px"});
+      $("#stage2").animate({top:"-60px"});
+      $("#stage3").animate({top:"-180px"});
+      $("#stage4").animate({top:"-540px"});
       break;
     case 15:
     // 08
-      move('#stage4', 600);
+      // move('#stage4', 600);
+      $("#stage4").animate({top:"-600px"});
       break;
     case 18:
     // 11
-      move('#stage3', 240);
-      setTimeout(function() {move('#stage4', 660);}, 0);
+      // move('#stage3', 240);
+      // setTimeout(function() {move('#stage4', 660);}, 0);
+      $("#stage3").animate({top:"-240px"});
+      $("#stage4").animate({top:"-660px"});
       break;
     case 19:
     // 12
-      move('#stage4', 720);
+      // move('#stage4', 720);
+      $("#stage4").animate({top:"-720px"});
       break;
     case 20:
     // 13
-      move('#stage4', 780);
+      // move('#stage4', 780);
+      $("#stage4").animate({top:"-780px"});
       break;
     case 21:
     // 14
-      move('#stage4', 840);
+      // move('#stage4', 840);
+      $("#stage4").animate({top:"-840px"});
       break;
     case 23:
     // 15
-      move('#stage4', 900);
+      // move('#stage4', 900);
+      $("#stage4").animate({top:"-900px"});
       break;
     case 25:
     // 16
-      move('#stage4', 960);
+      // move('#stage4', 960);
+      $("#stage4").animate({top:"-960px"});
       break;
     case 27:
     // 17
