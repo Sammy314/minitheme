@@ -18,7 +18,8 @@
   }
   function move(dom, value){
     var moveTimer = setInterval(function() {
-      var top = $(dom).css("top");
+      // var top = $(dom).css("top");
+      var top = parseInt(document.getElementById(dom.substr(1)).style.top);
       top = parseInt(top) -1;
       $(dom).css("top",top);
       if (top == -(value)) {
